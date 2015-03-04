@@ -23,24 +23,27 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
+    CLLocationManager *locationManager;
     //Alocar memória para o locationManager
     self.locationManager = [[CLLocationManager alloc]init];
     
     //Mostrar ao locationManager o quão exata deve ser a localização encontrada
     [self.locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
     
+    //Determinar que a propriedade delegate do locationManager seja a instância da ViewController
+    [self.locationManager setDelegate:self];
+    
     if([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)])
     {
         [self.locationManager requestAlwaysAuthorization];
     }
     
+    
     //Dizer ao locationManager para começar a procurar pela localização imediatamente
     [self.locationManager startUpdatingLocation];
-    
-    
     // Do any additional setup after loading the view, typically from a nib.
-    self.mapView.delegate = self;
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,6 +73,16 @@
     //Determinar região com as coordenadas de localização atual e os limites N/S e L/O no zoom em metros
     region = MKCoordinateRegionMakeWithDistance(loc, 250, 250);
     
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:YES];
+    
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [self.locationManager startUpdatingLocation];
+    [_mapView setRegion:region animated:YES];
     
 }
 
@@ -138,6 +151,19 @@
     point.subtitle = [placemark.addressDictionary objectForKey:@"City"];
     [self.mapView addAnnotation:point];
 }
+
+
+- (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id)overlay {
+    
+    if ([overlay isKindOfClass:[MKPolyline class]]) {
+        MKPolylineView* aView = [[MKPolylineView alloc]initWithPolyline:(MKPolyline*)overlay] ;
+        aView.strokeColor = [[UIColor blueColor] colorWithAlphaComponent:0.5];
+        aView.lineWidth = 10;
+        return aView;
+    }
+    return nil;
+}
+
 
 -(MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
     MKPolylineRenderer  * routeLineRenderer = [[MKPolylineRenderer alloc] initWithPolyline:routeDetails.polyline];

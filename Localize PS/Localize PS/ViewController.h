@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)mostraMapa:(id)sender;
+- (IBAction)mostraListaPS:(id)sender;
 
 @end
 

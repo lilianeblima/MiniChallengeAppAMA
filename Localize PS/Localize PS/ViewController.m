@@ -24,4 +24,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)mostraMapa:(id)sender {
+}
+
+- (IBAction)mostraListaPS:(id)sender {
+}
 @end

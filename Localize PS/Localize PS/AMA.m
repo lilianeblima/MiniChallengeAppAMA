@@ -8,32 +8,43 @@
 
 #import "AMA.h"
 
+
 @implementation AMA
+
+@synthesize nome;
+@synthesize endereco;
+@synthesize regiao;
+@synthesize latitude;
+@synthesize longitude;
+@synthesize telefone;
+@synthesize Hfuncionamento;
+
 
 - (id) init {
     self = [super init];
     
     if (self) {
-        _nome = [[NSString alloc] init];
-        _endereco = [[NSString alloc] init];
-        _regiao = [[NSString alloc] init];
-        _latitude = [[NSNumber alloc]init];
-        _longitude = [[NSNumber alloc]init];
-        _telefone = [[NSString alloc]init];
+        nome = [[NSString alloc] init];
+        endereco = [[NSString alloc] init];
+        regiao = [[NSString alloc] init];
+        latitude = [[NSString alloc]init];
+        longitude = [[NSString alloc]init];
+        telefone = [[NSString alloc]init];
+        Hfuncionamento = [[NSString alloc]init];
     }
     return self;
 }
-
-- (void) Hosp:(NSString *)n : (NSString *)e : (NSString *)r : (NSNumber *)lat : (NSNumber *)lon : (Boolean)f : (NSString *)t
-{
-    [self setNome:n];
-    [self setEndereco:e];
-    [self setRegiao:r];
-    [self setLatitude:lat];
-    [self setLongitude:lon];
-    [self setHfuncionamento:f];
-    [self setTelefone:t];
-    
-}
+//
+//- (void) Hosp:(NSString *)n : (NSString *)e : (NSString *)r : (NSNumber *)lat : (NSNumber *)lon : (Boolean)f : (NSString *)t
+//{
+//    [self setNome:n];
+//    [self setEndereco:e];
+//    [self setRegiao:r];
+//    [self setLatitude:lat];
+//    [self setLongitude:lon];
+//    [self setHfuncionamento:f];
+//    [self setTelefone:t];
+//    
+//}
 
 @end

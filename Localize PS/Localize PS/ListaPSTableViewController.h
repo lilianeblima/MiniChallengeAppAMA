@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AMA.h"
+#import "ListaAMA.h"
 
 @interface ListaPSTableViewController : UITableViewController
 

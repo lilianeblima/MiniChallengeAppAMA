@@ -13,9 +13,9 @@
     NSString *nome;
     NSString *endereco;
     NSString *regiao;
-    NSNumber *latitude;
-    NSNumber *longitude;
-    Boolean Hfuncionamento;
+    NSString *latitude;
+    NSString *longitude;
+    NSString *Hfuncionamento;
     NSString *telefone;
   
 }
@@ -23,13 +23,13 @@
 @property NSString *nome;
 @property NSString *endereco;
 @property NSString *regiao;
-@property NSNumber *latitude;
-@property NSNumber *longitude;
-@property Boolean Hfuncionamento;
+@property NSString *latitude;
+@property NSString *longitude;
+@property NSString *Hfuncionamento;
 @property NSString *telefone;
 
 - (id) init;
-- (void) Hosp:(NSString *)n : (NSString *)e : (NSString *)r : (NSNumber *)lat : (NSNumber *)lon : (Boolean)f : (NSString *)t;
+
 
 
 @end

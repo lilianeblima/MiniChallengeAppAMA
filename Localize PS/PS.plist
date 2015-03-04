@@ -12,11 +12,11 @@
 			<key>Regiao</key>
 			<string>ITAIM PTA</string>
 			<key>Latitude</key>
-			<integer>0</integer>
+			<string>-23.51202613</string>
 			<key>Longitude</key>
-			<integer>0</integer>
+			<string>-46.40928228</string>
 			<key>24hrs?</key>
-			<false/>
+			<string>NAO</string>
 			<key>Telefone</key>
 			<string>2035-4034</string>
 		</dict>
@@ -31,11 +31,11 @@
 			<key>Regiao</key>
 			<string>BUTANTÃ</string>
 			<key>Latitude</key>
-			<integer>0</integer>
+			<string>-22.11015538</string>
 			<key>Longitude</key>
-			<integer>0</integer>
+			<string>-48.31578309</string>
 			<key>24hrs?</key>
-			<false/>
+			<string>NAO</string>
 			<key>Telefone</key>
 			<string>3782-8518</string>
 		</dict>
@@ -50,11 +50,11 @@
 			<key>Regiao</key>
 			<string>PIRITUBA</string>
 			<key>Latitude</key>
-			<integer>0</integer>
+			<string>-23.48434538</string>
 			<key>Longitude</key>
-			<integer>0</integer>
+			<string>-46.72845952</string>
 			<key>24hrs?</key>
-			<true/>
+			<string>SIM</string>
 			<key>Telefone</key>
 			<string>3974-7000</string>
 		</dict>

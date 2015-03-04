@@ -19,13 +19,16 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)mostraMapa:(id)sender {
-}
+    }
+    
+
 
 - (IBAction)mostraListaPS:(id)sender {
 }

@@ -39,8 +39,7 @@
     }
     
     
-    //Dizer ao locationManager para começar a procurar pela localização imediatamente
-    [self.locationManager startUpdatingLocation];
+    
     // Do any additional setup after loading the view, typically from a nib.
     
 
@@ -202,7 +201,8 @@
  *
  */
 - (IBAction)localizacaoAtual:(id)sender {
-   
+    //Dizer ao locationManager para começar a procurar pela localização imediatamente
+    [self.locationManager startUpdatingLocation];
     [_mapView setRegion:region animated:YES];
     
  }

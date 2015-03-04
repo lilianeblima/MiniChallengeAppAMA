@@ -14,6 +14,9 @@
 		11526E2C1AA728BC00BFE981 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11526E2B1AA728BC00BFE981 /* Images.xcassets */; };
 		11526E2F1AA728BC00BFE981 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11526E2D1AA728BC00BFE981 /* LaunchScreen.xib */; };
 		11526E3B1AA728BC00BFE981 /* Localize_PSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11526E3A1AA728BC00BFE981 /* Localize_PSTests.m */; };
+		11526E471AA7459100BFE981 /* PS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11526E461AA7459100BFE981 /* PS.plist */; };
+		11526E4A1AA7486300BFE981 /* AMA.m in Sources */ = {isa = PBXBuildFile; fileRef = 11526E491AA7486300BFE981 /* AMA.m */; };
+		11526E4D1AA74BA100BFE981 /* ListaAMA.m in Sources */ = {isa = PBXBuildFile; fileRef = 11526E4C1AA74BA100BFE981 /* ListaAMA.m */; };
 		21A977181AA72B5900ED4823 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21A977171AA72B5900ED4823 /* fontawesome-webfont.ttf */; };
 		21A9771B1AA72C3C00ED4823 /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A9771A1AA72C3C00ED4823 /* MapaViewController.m */; };
 		21A9771E1AA72E4F00ED4823 /* ListaPSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A9771D1AA72E4F00ED4823 /* ListaPSTableViewController.m */; };
@@ -46,6 +49,11 @@
 		11526E341AA728BC00BFE981 /* Localize PSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Localize PSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11526E391AA728BC00BFE981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11526E3A1AA728BC00BFE981 /* Localize_PSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Localize_PSTests.m; sourceTree = "<group>"; };
+		11526E461AA7459100BFE981 /* PS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PS.plist; sourceTree = "<group>"; };
+		11526E481AA7486300BFE981 /* AMA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMA.h; sourceTree = "<group>"; };
+		11526E491AA7486300BFE981 /* AMA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMA.m; sourceTree = "<group>"; };
+		11526E4B1AA74BA100BFE981 /* ListaAMA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaAMA.h; sourceTree = "<group>"; };
+		11526E4C1AA74BA100BFE981 /* ListaAMA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaAMA.m; sourceTree = "<group>"; };
 		21A977171AA72B5900ED4823 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		21A977191AA72C3C00ED4823 /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
 		21A9771A1AA72C3C00ED4823 /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
@@ -80,6 +88,7 @@
 		11526E121AA728BC00BFE981 = {
 			isa = PBXGroup;
 			children = (
+				11526E461AA7459100BFE981 /* PS.plist */,
 				21A977231AA72EFB00ED4823 /* CoreGraphics.framework */,
 				21A977211AA72EF400ED4823 /* CoreLocation.framework */,
 				21A9771F1AA72EEA00ED4823 /* MapKit.framework */,
@@ -123,6 +132,10 @@
 			children = (
 				11526E1F1AA728BC00BFE981 /* Info.plist */,
 				11526E201AA728BC00BFE981 /* main.m */,
+				11526E481AA7486300BFE981 /* AMA.h */,
+				11526E491AA7486300BFE981 /* AMA.m */,
+				11526E4B1AA74BA100BFE981 /* ListaAMA.h */,
+				11526E4C1AA74BA100BFE981 /* ListaAMA.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -228,6 +241,7 @@
 				21A977181AA72B5900ED4823 /* fontawesome-webfont.ttf in Resources */,
 				11526E2F1AA728BC00BFE981 /* LaunchScreen.xib in Resources */,
 				11526E2C1AA728BC00BFE981 /* Images.xcassets in Resources */,
+				11526E471AA7459100BFE981 /* PS.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +262,8 @@
 				11526E271AA728BC00BFE981 /* ViewController.m in Sources */,
 				21A9771B1AA72C3C00ED4823 /* MapaViewController.m in Sources */,
 				11526E241AA728BC00BFE981 /* AppDelegate.m in Sources */,
+				11526E4D1AA74BA100BFE981 /* ListaAMA.m in Sources */,
+				11526E4A1AA7486300BFE981 /* AMA.m in Sources */,
 				11526E211AA728BC00BFE981 /* main.m in Sources */,
 				21A9771E1AA72E4F00ED4823 /* ListaPSTableViewController.m in Sources */,
 			);

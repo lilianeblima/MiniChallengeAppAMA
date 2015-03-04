@@ -77,8 +77,11 @@
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:YES];
+        [self.locationManager requestAlwaysAuthorization];
+        [_mapView setRegion:region animated:YES];
+   
     
-    [_mapView setRegion:region animated:YES];
+    
     
 }
 

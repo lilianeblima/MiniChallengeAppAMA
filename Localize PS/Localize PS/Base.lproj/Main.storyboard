@@ -109,37 +109,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2k-qv-SEl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Traçar rota" id="qOo-F7-4tM">
+                                        <connections>
+                                            <action selector="mostraRota:" destination="0KM-8A-kgS" id="aSw-1k-s5y"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Qjn-bI-4rs"/>
+                                    <barButtonItem title="Localização Atual" id="MvQ-bA-QoI">
+                                        <connections>
+                                            <action selector="localizacaoAtual:" destination="0KM-8A-kgS" id="BRS-W0-Gpr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9I1-jy-3jF">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="9I1-jy-3jF" secondAttribute="trailing" id="9Fi-Fn-j45"/>
-                            <constraint firstItem="9I1-jy-3jF" firstAttribute="leading" secondItem="Jaw-S4-ad0" secondAttribute="leading" id="DmK-yj-qgM"/>
-                            <constraint firstItem="9I1-jy-3jF" firstAttribute="top" secondItem="XOz-hv-YSH" secondAttribute="bottom" id="cen-wD-a36"/>
-                            <constraint firstItem="9I1-jy-3jF" firstAttribute="bottom" secondItem="av6-WZ-KXb" secondAttribute="top" id="qjn-Oa-6j2"/>
+                            <constraint firstItem="I2k-qv-SEl" firstAttribute="leading" secondItem="9I1-jy-3jF" secondAttribute="leading" id="6KZ-Cd-03O"/>
+                            <constraint firstAttribute="trailing" secondItem="9I1-jy-3jF" secondAttribute="trailing" id="8cn-ir-0yp"/>
+                            <constraint firstItem="I2k-qv-SEl" firstAttribute="bottom" secondItem="av6-WZ-KXb" secondAttribute="top" id="JdL-JJ-8oa"/>
+                            <constraint firstItem="I2k-qv-SEl" firstAttribute="leading" secondItem="Jaw-S4-ad0" secondAttribute="leading" id="eiQ-1N-AUa"/>
+                            <constraint firstItem="9I1-jy-3jF" firstAttribute="top" secondItem="XOz-hv-YSH" secondAttribute="bottom" id="mwS-Ib-Rmw"/>
+                            <constraint firstItem="I2k-qv-SEl" firstAttribute="trailing" secondItem="9I1-jy-3jF" secondAttribute="trailing" id="sme-WR-Fqx"/>
+                            <constraint firstItem="I2k-qv-SEl" firstAttribute="top" secondItem="9I1-jy-3jF" secondAttribute="bottom" id="xqc-7b-AqV"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="I2k-qv-SEl"/>
                                 <exclude reference="9I1-jy-3jF"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="9Fi-Fn-j45"/>
-                                <exclude reference="DmK-yj-qgM"/>
-                                <exclude reference="cen-wD-a36"/>
-                                <exclude reference="qjn-Oa-6j2"/>
+                                <exclude reference="8cn-ir-0yp"/>
+                                <exclude reference="mwS-Ib-Rmw"/>
+                                <exclude reference="6KZ-Cd-03O"/>
+                                <exclude reference="JdL-JJ-8oa"/>
+                                <exclude reference="eiQ-1N-AUa"/>
+                                <exclude reference="sme-WR-Fqx"/>
+                                <exclude reference="xqc-7b-AqV"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="I2k-qv-SEl"/>
                                 <include reference="9I1-jy-3jF"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="9Fi-Fn-j45"/>
-                                <include reference="DmK-yj-qgM"/>
-                                <include reference="cen-wD-a36"/>
-                                <include reference="qjn-Oa-6j2"/>
+                                <include reference="8cn-ir-0yp"/>
+                                <include reference="mwS-Ib-Rmw"/>
+                                <include reference="6KZ-Cd-03O"/>
+                                <include reference="JdL-JJ-8oa"/>
+                                <include reference="eiQ-1N-AUa"/>
+                                <include reference="sme-WR-Fqx"/>
+                                <include reference="xqc-7b-AqV"/>
                             </mask>
                         </variation>
                     </view>

@@ -15,5 +15,7 @@
 -(void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations;
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+- (IBAction)mostraRota:(id)sender;
+- (IBAction)localizacaoAtual:(id)sender;
 
 @end

@@ -78,7 +78,6 @@
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:YES];
-    
     self.locationManager.distanceFilter = kCLDistanceFilterNone;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     [self.locationManager startUpdatingLocation];
@@ -194,5 +193,20 @@
 }
 
 
+
+- (IBAction)mostraRota:(id)sender {
+    
+}
+
+
+/*
+ * Mostrar localização atual
+ *
+ */
+- (IBAction)localizacaoAtual:(id)sender {
+   
+    [_mapView setRegion:region animated:YES];
+    
+ }
 
 @end

@@ -49,7 +49,7 @@
 		11526E341AA728BC00BFE981 /* Localize PSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Localize PSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11526E391AA728BC00BFE981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11526E3A1AA728BC00BFE981 /* Localize_PSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Localize_PSTests.m; sourceTree = "<group>"; };
-		11526E461AA7459100BFE981 /* PS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PS.plist; sourceTree = "<group>"; };
+		11526E461AA7459100BFE981 /* PS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PS.plist; path = ../PS.plist; sourceTree = "<group>"; };
 		11526E481AA7486300BFE981 /* AMA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMA.h; sourceTree = "<group>"; };
 		11526E491AA7486300BFE981 /* AMA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMA.m; sourceTree = "<group>"; };
 		11526E4B1AA74BA100BFE981 /* ListaAMA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaAMA.h; sourceTree = "<group>"; };
@@ -88,7 +88,6 @@
 		11526E121AA728BC00BFE981 = {
 			isa = PBXGroup;
 			children = (
-				11526E461AA7459100BFE981 /* PS.plist */,
 				21A977231AA72EFB00ED4823 /* CoreGraphics.framework */,
 				21A977211AA72EF400ED4823 /* CoreLocation.framework */,
 				21A9771F1AA72EEA00ED4823 /* MapKit.framework */,
@@ -110,19 +109,16 @@
 		11526E1D1AA728BC00BFE981 /* Localize PS */ = {
 			isa = PBXGroup;
 			children = (
+				21ABF5BB1AA77C7000BD36C9 /* Plist */,
+				21ABF5B81AA77BC100BD36C9 /* Model */,
+				21ABF5BA1AA77C5400BD36C9 /* Fonts */,
+				21ABF5B91AA77BFE00BD36C9 /* ViewControllers */,
 				11526E221AA728BC00BFE981 /* AppDelegate.h */,
 				11526E231AA728BC00BFE981 /* AppDelegate.m */,
-				11526E251AA728BC00BFE981 /* ViewController.h */,
-				11526E261AA728BC00BFE981 /* ViewController.m */,
 				11526E281AA728BC00BFE981 /* Main.storyboard */,
-				21A9771C1AA72E4F00ED4823 /* ListaPSTableViewController.h */,
-				21A9771D1AA72E4F00ED4823 /* ListaPSTableViewController.m */,
-				21A977171AA72B5900ED4823 /* fontawesome-webfont.ttf */,
 				11526E2B1AA728BC00BFE981 /* Images.xcassets */,
 				11526E2D1AA728BC00BFE981 /* LaunchScreen.xib */,
 				11526E1E1AA728BC00BFE981 /* Supporting Files */,
-				21A977191AA72C3C00ED4823 /* MapaViewController.h */,
-				21A9771A1AA72C3C00ED4823 /* MapaViewController.m */,
 			);
 			path = "Localize PS";
 			sourceTree = "<group>";
@@ -155,6 +151,43 @@
 				11526E391AA728BC00BFE981 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21ABF5B81AA77BC100BD36C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		21ABF5B91AA77BFE00BD36C9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				21A9771A1AA72C3C00ED4823 /* MapaViewController.m */,
+				21A977191AA72C3C00ED4823 /* MapaViewController.h */,
+				21A9771D1AA72E4F00ED4823 /* ListaPSTableViewController.m */,
+				21A9771C1AA72E4F00ED4823 /* ListaPSTableViewController.h */,
+				11526E261AA728BC00BFE981 /* ViewController.m */,
+				11526E251AA728BC00BFE981 /* ViewController.h */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		21ABF5BA1AA77C5400BD36C9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				21A977171AA72B5900ED4823 /* fontawesome-webfont.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		21ABF5BB1AA77C7000BD36C9 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				11526E461AA7459100BFE981 /* PS.plist */,
+			);
+			name = Plist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

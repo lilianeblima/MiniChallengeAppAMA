@@ -10,12 +10,42 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "MapKit/MKAnnotation.h"
+#import "PointMarker.h"
+#import "Place.h"
 
-@interface MapaViewController : UIViewController <MKMapViewDelegate>
--(void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations;
+@interface MapaViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
+{
+    bool placesLocated;
+    bool searching;
+}
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property CLLocationManager *locationManager;
+
 - (IBAction)mostraRota:(id)sender;
 - (IBAction)localizacaoAtual:(id)sender;
+- (IBAction)atualizarPS:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *atualizarPS;
+@property (weak, nonatomic) IBOutlet UIVisualEffectView *blurViewOutlet;
+
+
+@property MKPointAnnotation *pointMarker;
+
+@property NSMutableArray *searchQuery;
+@property PointMarker *routeDestination;
+
+@property (weak, nonatomic) IBOutlet UIButton *voltarNav;
+
+@property (weak, nonatomic) IBOutlet UILabel *nomeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *telefoneLabel;
+@property (weak, nonatomic) IBOutlet UILabel *distanciaLabel;
+
++ (instancetype)sharedInstance;
+- (IBAction)voltarNav:(id)sender;
+- (void)searchLocations: (MKCoordinateRegion)region;
+
+- (IBAction)rotaBotao:(id)sender;
+
 
 @end

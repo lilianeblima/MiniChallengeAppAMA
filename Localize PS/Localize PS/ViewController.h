@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    
+NSArray *query;
+
+}
 
 - (IBAction)mostraMapa:(id)sender;
 - (IBAction)mostraListaPS:(id)sender;

@@ -49,6 +49,8 @@
 }
 
 
+
+
 - (void)findDirectionsFrom:(MKMapItem *) source to: (MKMapItem *) destination {
     MKDirectionsRequest *request = [[MKDirectionsRequest alloc] init];
     
@@ -223,10 +225,10 @@
     
     view.pinColor = MKPinAnnotationColorGreen;
     
-    
     MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:[view.annotation coordinate] addressDictionary:nil];
     
     self.routeDestination = [[PointMarker alloc] initWithCoordinate:placemark.coordinate title:[view.annotation title] Subtitle:@""];
+    
     
 }
 

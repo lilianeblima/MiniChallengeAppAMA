@@ -1,63 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>Ama3</key>
-	<array>
-		<dict>
-			<key>Nome</key>
-			<string>UBS/AMA JD CAMPOS</string>
-			<key>Endereco</key>
-			<string>RUA CRESCENTE, 97, SAO PAULO</string>
-			<key>Regiao</key>
-			<string>ITAIM PTA</string>
-			<key>Latitude</key>
-			<string>-23.51202613</string>
-			<key>Longitude</key>
-			<string>-46.40928228</string>
-			<key>24hrs?</key>
-			<string>NAO</string>
-			<key>Telefone</key>
-			<string>2035-4034</string>
-		</dict>
-	</array>
-	<key>Ama2</key>
-	<array>
-		<dict>
-			<key>Nome</key>
-			<string>UBS/AMA JD SÃO JORGE</string>
-			<key>Endereco</key>
-			<string>RUA ÂNGELO APARECIDO SANTOS DIAS, 331, SAO PAULO</string>
-			<key>Regiao</key>
-			<string>BUTANTÃ</string>
-			<key>Latitude</key>
-			<string>-22.11015538</string>
-			<key>Longitude</key>
-			<string>-48.31578309</string>
-			<key>24hrs?</key>
-			<string>NAO</string>
-			<key>Telefone</key>
-			<string>3782-8518</string>
-		</dict>
-	</array>
-	<key>Ama1</key>
-	<array>
-		<dict>
-			<key>Nome</key>
-			<string>HOSP. DR.JOSÉ SOARES HUNGRIA</string>
-			<key>Endereco</key>
-			<string>AV. MENOTTI LAUDISIO, 100, SAO PAULO</string>
-			<key>Regiao</key>
-			<string>PIRITUBA</string>
-			<key>Latitude</key>
-			<string>-23.48434538</string>
-			<key>Longitude</key>
-			<string>-46.72845952</string>
-			<key>24hrs?</key>
-			<string>SIM</string>
-			<key>Telefone</key>
-			<string>3974-7000</string>
-		</dict>
-	</array>
-</dict>
+<array>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA JD CAMPOS</string>
+		<key>Endereco</key>
+		<string>RUA CRESCENTE, 97, SAO PAULO</string>
+		<key>Regiao</key>
+		<string>ITAIM PTA</string>
+		<key>Latitude</key>
+		<string>-23.51202613</string>
+		<key>Longitude</key>
+		<string>-46.40928228</string>
+		<key>is24hrs</key>
+		<string>NÃO</string>
+		<key>Telefone</key>
+		<string>2035-4034</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA JD SÃO JORGE</string>
+		<key>Endereco</key>
+		<string>RUA ÂNGELO APARECIDO SANTOS DIAS, 331, SAO PAULO</string>
+		<key>Regiao</key>
+		<string>BUTANTÃ</string>
+		<key>Latitude</key>
+		<string>-22.11015538</string>
+		<key>Longitude</key>
+		<string>-48.31578309</string>
+		<key>is24hrs</key>
+		<string>NÃO</string>
+		<key>Telefone</key>
+		<string>3782-8518</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>HOSP. DR.JOSÉ SOARES HUNGRIA</string>
+		<key>Endereco</key>
+		<string>AV. MENOTTI LAUDISIO, 100, SAO PAULO</string>
+		<key>Regiao</key>
+		<string>PIRITUBA</string>
+		<key>Latitude</key>
+		<string>-23.48434538</string>
+		<key>Longitude</key>
+		<string>-46.72845952</string>
+		<key>is24hrs</key>
+		<string>SIM</string>
+		<key>Telefone</key>
+		<string>3974-7000</string>
+	</dict>
+</array>
 </plist>

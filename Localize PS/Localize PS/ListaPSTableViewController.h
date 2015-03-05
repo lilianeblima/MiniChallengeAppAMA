@@ -11,7 +11,7 @@
 #import "ListaAMA.h"
 #import "PSTableViewCell.h"
 
-@interface ListaPSTableViewController : UITableViewController
+@interface ListaPSTableViewController : UITableViewController 
 
 
 @property NSMutableArray *Lista;

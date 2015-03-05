@@ -10,18 +10,12 @@
 #import "AMA.h"
 
 @interface ListaAMA : NSObject
-{
-    NSMutableArray *AllAMA;
-}
 
 @property NSMutableArray *AllAMA;
 
 -(id) init;
-+ (id)ItensCompartilhado;
-- (AMA *) itenForIndex: (NSInteger)index;
-- (void) removeItem : (NSInteger)index;
--(void)exibirInfo;
-
+-(void)nomes;
+-(AMA*)retorno:(NSNumber*)i;
 
 @end
 

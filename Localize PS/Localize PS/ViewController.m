@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MapaViewController.h"
 
 @interface ViewController ()
 
@@ -22,14 +23,36 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)mostraMapa:(id)sender {
-    }
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
+    if ([segue.identifier isEqualToString:@"showSearchViewSegue"]) {
+        
+        MapaViewController *MapaView = segue.destinationViewController;
+        UIButton *btn = sender;
+        
+        if (![btn.titleLabel.text isEqual: @"I'm Lucky"]) {
+            MapaView.searchQuery = (NSMutableArray*) query;
+        }
+        
+    }
+}
+
+#pragma mark Category button actions
+
+
+- (IBAction)mostraMapa:(id)sender {
+//    query = @[@"theater"];
+//    [self performSegueWithIdentifier:@"showSearchViewSegue" sender:sender];
+
+}
 
 
 - (IBAction)mostraListaPS:(id)sender {
 }
+
+
+
+
 @end

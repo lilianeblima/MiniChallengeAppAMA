@@ -15,14 +15,6 @@ NSArray *query;
 
 }
 
-- (IBAction)restaurantsButton:(id)sender;
-- (IBAction)barButton:(id)sender;
-- (IBAction)coffeeButton:(id)sender;
-- (IBAction)pubsButton:(id)sender;
-- (IBAction)moviesButton:(id)sender;
-- (IBAction)theaterButton:(id)sender;
-- (IBAction)BkButton:(id)sender;
-
 - (IBAction)mostraMapa:(id)sender;
 - (IBAction)mostraListaPS:(id)sender;
 

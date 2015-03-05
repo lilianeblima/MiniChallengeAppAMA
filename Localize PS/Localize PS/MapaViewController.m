@@ -39,9 +39,6 @@
     
     [_atualizarPS setHidden:YES];     // ocultar voltarNav
     
-    //Instanciar o MKPointAnnotation
-    //_pointMarker = [[MKPointAnnotation alloc] init];
-    
     [super viewDidLoad];
     
 }
@@ -169,13 +166,7 @@
                         NSString *strDistancia = [NSString stringWithFormat: @"%.1f km", (p.distancia/1000)];
                         
                         PointMarker *annot = [[PointMarker alloc] initWithCoordinate:pm.coordinate title:pm.name Subtitle:strDistancia];
-                        // [annot setCoordinate:pm.coordinate];
-                        //[annot setTitle: [NSString stringWithFormat:@"%@ - %.0fm de distância",pm.name,p.distancia]];
-                        //                    [annot setTitle:pm.name];
-                        //
-                        //                    [annot setSubtitle:strDistancia];
-                        //
-                        //
+                       
                         [annotations addObject: annot];
                         [_mapView addAnnotation:annot];
                         
@@ -187,9 +178,6 @@
             
         }
     }
-    
-    
-    //[_mapView showAnnotations: annotations animated:YES];
     
     
     [_mapView setRegion:region animated:YES];
@@ -228,7 +216,7 @@
 {
     
     self.nomeLabel.text = [view.annotation title];
-    //self.telefoneLabel.text = [view.annotation subtitle];
+    self.telefoneLabel.text = [view.annotation subtitle];
     self.distanciaLabel.text = [view.annotation subtitle];
     
     self.blurViewOutlet.hidden = NO;
@@ -249,18 +237,6 @@
     view.pinColor = MKPinAnnotationColorPurple;
     
 }
-
-
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    
-//    if ([segue.identifier isEqualToString:@"routeSegue"]) {
-//        
-//        RouteViewController *destRouteView = segue.destinationViewController;
-//        
-//        destRouteView.destination = self.routeDestination;
-//    }
-//    
-//}
 
 
 

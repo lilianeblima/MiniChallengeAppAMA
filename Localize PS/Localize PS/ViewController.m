@@ -32,7 +32,7 @@
         MapaViewController *MapaView = segue.destinationViewController;
         UIButton *btn = sender;
         
-        if (![btn.titleLabel.text isEqual: @"I'm Lucky"]) {
+        if (![btn.titleLabel.text isEqual: @""]) {
             MapaView.searchQuery = (NSMutableArray*) query;
         }
         
@@ -43,8 +43,6 @@
 
 
 - (IBAction)mostraMapa:(id)sender {
-//    query = @[@"theater"];
-//    [self performSegueWithIdentifier:@"showSearchViewSegue" sender:sender];
 
 }
 

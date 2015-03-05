@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "AMA.h"
 #import "ListaAMA.h"
+#import "PSTableViewCell.h"
 
 @interface ListaPSTableViewController : UITableViewController
 
+
+@property NSMutableArray *Lista;
 @end

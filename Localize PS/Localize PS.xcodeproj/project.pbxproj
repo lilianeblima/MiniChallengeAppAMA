@@ -17,6 +17,7 @@
 		11526E471AA7459100BFE981 /* PS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11526E461AA7459100BFE981 /* PS.plist */; };
 		11526E4A1AA7486300BFE981 /* AMA.m in Sources */ = {isa = PBXBuildFile; fileRef = 11526E491AA7486300BFE981 /* AMA.m */; };
 		11526E4D1AA74BA100BFE981 /* ListaAMA.m in Sources */ = {isa = PBXBuildFile; fileRef = 11526E4C1AA74BA100BFE981 /* ListaAMA.m */; };
+		11668F4B1AA78B5E0013918C /* PSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11668F4A1AA78B5E0013918C /* PSTableViewCell.m */; };
 		21A977181AA72B5900ED4823 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21A977171AA72B5900ED4823 /* fontawesome-webfont.ttf */; };
 		21A9771B1AA72C3C00ED4823 /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A9771A1AA72C3C00ED4823 /* MapaViewController.m */; };
 		21A9771E1AA72E4F00ED4823 /* ListaPSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A9771D1AA72E4F00ED4823 /* ListaPSTableViewController.m */; };
@@ -54,6 +55,8 @@
 		11526E491AA7486300BFE981 /* AMA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMA.m; sourceTree = "<group>"; };
 		11526E4B1AA74BA100BFE981 /* ListaAMA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaAMA.h; sourceTree = "<group>"; };
 		11526E4C1AA74BA100BFE981 /* ListaAMA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaAMA.m; sourceTree = "<group>"; };
+		11668F491AA78B5E0013918C /* PSTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTableViewCell.h; sourceTree = "<group>"; };
+		11668F4A1AA78B5E0013918C /* PSTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTableViewCell.m; sourceTree = "<group>"; };
 		21A977171AA72B5900ED4823 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		21A977191AA72C3C00ED4823 /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
 		21A9771A1AA72C3C00ED4823 /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 				11526E221AA728BC00BFE981 /* AppDelegate.h */,
 				11526E231AA728BC00BFE981 /* AppDelegate.m */,
 				11526E281AA728BC00BFE981 /* Main.storyboard */,
+				11668F491AA78B5E0013918C /* PSTableViewCell.h */,
+				11668F4A1AA78B5E0013918C /* PSTableViewCell.m */,
 				11526E2B1AA728BC00BFE981 /* Images.xcassets */,
 				11526E2D1AA728BC00BFE981 /* LaunchScreen.xib */,
 				11526E1E1AA728BC00BFE981 /* Supporting Files */,
@@ -294,6 +299,7 @@
 			files = (
 				11526E271AA728BC00BFE981 /* ViewController.m in Sources */,
 				21A9771B1AA72C3C00ED4823 /* MapaViewController.m in Sources */,
+				11668F4B1AA78B5E0013918C /* PSTableViewCell.m in Sources */,
 				11526E241AA728BC00BFE981 /* AppDelegate.m in Sources */,
 				11526E4D1AA74BA100BFE981 /* ListaAMA.m in Sources */,
 				11526E4A1AA7486300BFE981 /* AMA.m in Sources */,

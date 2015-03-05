@@ -7,59 +7,81 @@
 //
 
 #import "ListaPSTableViewController.h"
+#import "PSTableViewCell.h"
 
 
 @interface ListaPSTableViewController ()
 {
-    AMA *PS;
+    AMA *PS, *auxiliar;
     ListaAMA *ListaPS;
-    int indexArrayPlist;
+    int i;
+    NSMutableArray *teste;
 }
 
 @end
 
 @implementation ListaPSTableViewController
+@synthesize Lista;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    indexArrayPlist = 1;
+    i = 1;
     
     //Inicializando as variaveis
     PS = [[AMA alloc]init];
     ListaPS = [ListaAMA ItensCompartilhado];
+    teste = [[NSMutableArray alloc]init];
+    
+   Lista = [[NSMutableArray alloc] initWithCapacity:200];
+
     
     
-    //Pegando os valores da Plist
+    
     
     
     
    
     NSString *Hosp;
     
-    for (indexArrayPlist =1; indexArrayPlist<4; indexArrayPlist++) {
-         NSString* String_indexArrayPlist = [NSString stringWithFormat:@"%i", indexArrayPlist];
-        Hosp = [@"Ama" stringByAppendingString: String_indexArrayPlist];
+    for (i =1; i<4; i++)
+    {
+  //Bloco para pegar os dados da Plist
+         NSString* String_i = [NSString stringWithFormat:@"%i", i];
+        Hosp = [@"Ama" stringByAppendingString: String_i];
+        
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"PS" ofType:@"plist"];
         NSDictionary *dicRoot = [NSDictionary dictionaryWithContentsOfFile:filePath ];
         NSArray *arrayList = [NSArray arrayWithArray:[dicRoot objectForKey:Hosp]];
         [arrayList enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop)
          {
+             
              [PS setNome:[obj valueForKey:@"Nome"]];
              [PS setEndereco:[obj valueForKey:@"Endereco"]];
              [PS setRegiao:[obj valueForKey:@"Regiao"]];
              [PS setHfuncionamento:[obj valueForKey:@"24hrs?"]];
              [PS setTelefone:[obj valueForKey:@"Telefone"]];
+             
+             NSLog(@"Endereco = %@",[obj valueForKey:@"Endereco"]);
+             
              [ListaPS.AllAMA addObject:PS];
-             
-             
-            // NSLog(@"Endereco = %@",[obj valueForKey:@"Endereco"]);
-             NSLog(@"%@", PS.endereco);
+            // [Lista addObject:PS];
          }];
-        
-       // NSLog(@"%@",ListaPS.AllAMA);
-
-
     }
+        
+        //[ListaPS.AllAMA addObject:PS];
+        //  [teste insertObject:PS atIndex:indexArrayPlist];
+        
+        
+        //[ListaPS.AllAMA insertObject:PS atIndex:indexArrayPlist];
+        // [brokenCars insertObject:@"BMW F25" atIndex:0];
+      //  [Lista addObject:PS];
+       // [ListaPS.AllAMA addObject:PS];
+      
+       // NSLog(@"%@",ListaPS.AllAMA);
+        
+
+
+   
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -67,6 +89,8 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    //NSLog(@"DEBUG");
+    //[ListaPS exibirInfo];
     
     
 }
@@ -87,29 +111,91 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    //return [ListaPS.AllAMA count];
-    return 0;
+    return [ListaPS.AllAMA count];
+    //return 0;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    PSTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PSTableCell" forIndexPath:indexPath];
+//    
+//    if (cell == nil) {
+//        cell = [[PSTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"PSTableCell"];
+//    }
+    
+//
+    
+   // auxiliar = [Lista indexOfObject:indexPath.row];
+    auxiliar = [ListaPS itenForIndex:indexPath.row];
+    
+    [[cell HEndereco] setText:auxiliar.endereco];
+    
+    auxiliar = nil;
+    
+    
+    
+//indexPath.row
+//    
+//    [[cell HEndereco] setText:ListaPS.AllAMA.Endereco];
+//    
+//    //auxiliar = [ListaPS itenForIndex:indexPath.row];
+//    
+    
+    
+    
+    
+    
+//    static NSString *simpleTableIdentifier = @"SimpleTableCell";
+//    
+//    PSTableViewCell *cell; = (PSTableViewCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+//    if (cell == nil)
+//    {
+//        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"SimpleTableCell" owner:self options:nil];
+//        cell = [nib objectAtIndex:0];
+//    }
+//    
+//    cell.nameLabel.text = [tableData objectAtIndex:indexPath.row];
+//    cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+//    cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
+    
+    
+    
+//    
+//    
+//    cell.textLabel.text = auxiliar.endereco;
+//    //cell
+//    
+//   //cell.textLabel.H
+//   // cell.textLabel.text = auxiliar.HEndereco;
+//    
+//   // cell.detailTextLabel.text = auxiliar.detalhe;
+//    
+//    auxiliar = nil;
+//
+//    
+//    return cell;
+    
+    
+    
+    
+    
+    
     
     // Configure the cell...
     
     return cell;
 }
-*/
 
-/*
+
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
+
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
@@ -119,21 +205,36 @@
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
 
-/*
+
+
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+    
+    long row1 = [fromIndexPath row];
+    
+    long row2 = [toIndexPath row];
+    
+    
+    
+    id temp = [ListaPS.AllAMA objectAtIndex:row1];
+    
+    [ListaPS.AllAMA removeObjectAtIndex:row1];
+    
+    [ListaPS.AllAMA insertObject:temp atIndex:(row2)];
+    
+    [ListaPS exibirInfo];
+    
 }
-*/
 
-/*
+
+
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
 }
-*/
+
 
 /*
 #pragma mark - Navigation

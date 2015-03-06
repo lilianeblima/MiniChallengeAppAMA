@@ -18,6 +18,7 @@
 -(AMA*)retorno:(NSNumber*)i;
 + (id)ItensCompartilhado;
 - (AMA *) amaForIndex: (NSInteger)index;
+-(void)exibirInfo;
 
 @end
 

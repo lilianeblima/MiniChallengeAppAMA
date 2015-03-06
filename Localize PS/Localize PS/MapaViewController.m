@@ -41,13 +41,14 @@
     [_locationManager startUpdatingLocation];
     
     [_atualizarPS setHidden:YES];     // ocultar voltarNav
+    CLLocationCoordinate2D loc;
+    loc = [[_locationManager location]coordinate];
+    [self calculoDistancia: loc];
+    [self calculoDistancia];
     
     PointMarker *ps = [[PointMarker alloc] init];
     [_mapView addAnnotation:ps];
     [_mapView selectAnnotation:ps animated: YES];
-    [ps setTitle:@"Teste"];
-    [ps setTitle:@"Teste sadasd asdas da"];
-    
     
     [super viewDidLoad];
     
@@ -199,12 +200,22 @@
 }
 
 - (void) calculoDistancia {
+    CLLocationCoordinate2D loca = [[_locationManager location]coordinate];
+    CLLocation *inicial = [[CLLocation alloc] initWithLatitude:loca.latitude longitude: loca.longitude];
+    CLLocationDistance distancia;
+    CLLocation *coordenadas;
     
+    NSLog(@"Inicial%@", inicial);
     for (int i=0; i < [amas.AllAMA count]; i++){
-    auxiliar = [amas amaForIndex:i];
-        CLLocation *distancia = [[CLLocation alloc] initWithLatitude:[auxiliar.latitude doubleValue]  longitude: [auxiliar.longitude doubleValue]];
-        
+        auxiliar = [amas.AllAMA objectAtIndex:i];
+        coordenadas = [[CLLocation alloc] initWithLatitude:[auxiliar.latitude doubleValue]  longitude: [auxiliar.longitude doubleValue]];
+        distancia = [inicial distanceFromLocation: coordenadas];
+        [auxiliar setDistanciaMapa:distancia/1000];
+    
     }
+    [amas exibirInfo];
+    
+    
 }
 
 - (IBAction)rotaBotao:(id)sender {

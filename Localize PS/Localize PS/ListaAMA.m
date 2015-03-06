@@ -23,6 +23,7 @@
     i=0;
     if (self) {
         AllAMA = [[NSMutableArray alloc] init];
+        PS.distanciaMapa = 02;
         
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"PS" ofType:@"plist"];
         NSArray *amas = [NSArray arrayWithContentsOfFile:filePath];
@@ -38,13 +39,8 @@
             [PS setLatitude:[ama valueForKey:@"Latitude"]];
             [PS setLongitude:[ama valueForKey:@"Longitude"]];
             
-            
-            NSLog(@"Nomes = %@",PS.nome);
-            NSLog(@"Vetor = %@",AllAMA);
-            
             [AllAMA addObject:PS];
-            
-        
+
             
             i++;
         }
@@ -105,6 +101,17 @@
     }
     return AllAMA[index];
 }
+
+-(void)exibirInfo {
+    AMA *auxiliar = [[AMA alloc] init];
+    for (int i = 0; i < [AllAMA count]; i++){
+        auxiliar = [AllAMA objectAtIndex:i];
+        printf("\ntitulo: %s", [auxiliar.nome UTF8String]);
+        printf("distancia: %f\n", auxiliar.distanciaMapa);
+        
+    }
+}
+
 
 
 @end

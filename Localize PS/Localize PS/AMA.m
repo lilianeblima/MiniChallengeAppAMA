@@ -19,5 +19,6 @@
 @synthesize telefone;
 @synthesize is24hrs;
 @synthesize distancia;
+@synthesize distanciaMapa;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface AMA : NSObject
 
@@ -19,6 +20,7 @@
 @property NSString *is24hrs;
 @property NSString *telefone;
 @property NSNumber *distancia;
+@property float distanciaMapa;
 
 
 @end

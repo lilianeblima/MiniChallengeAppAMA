@@ -22,6 +22,7 @@
     CLPlacemark *thePlacemark;
     ListaAMA *amas;
     AMA *auxiliar;
+    ListaAMA *amasAuxiliar;
 }
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;

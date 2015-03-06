@@ -10,9 +10,9 @@
 		<key>Regiao</key>
 		<string>ITAIM PTA</string>
 		<key>Latitude</key>
-		<string>-23.51202613</string>
+		<string>-23.5123838</string>
 		<key>Longitude</key>
-		<string>-46.40928228</string>
+		<string>-46.4091955</string>
 		<key>is24hrs</key>
 		<string>07:00 - 19:00</string>
 		<key>Telefone</key>
@@ -26,9 +26,9 @@
 		<key>Regiao</key>
 		<string>BUTANTÃ</string>
 		<key>Latitude</key>
-		<string>-22.11015538</string>
+		<string>-23.5925568</string>
 		<key>Longitude</key>
-		<string>-48.31578309</string>
+		<string>-46.7839663</string>
 		<key>is24hrs</key>
 		<string>07:00 - 19:00</string>
 		<key>Telefone</key>
@@ -42,9 +42,9 @@
 		<key>Regiao</key>
 		<string>PIRITUBA</string>
 		<key>Latitude</key>
-		<string>-23.48434538</string>
+		<string>-23.4843423</string>
 		<key>Longitude</key>
-		<string>-46.72845952</string>
+		<string>-46.7286459</string>
 		<key>is24hrs</key>
 		<string>24hrs</string>
 		<key>Telefone</key>

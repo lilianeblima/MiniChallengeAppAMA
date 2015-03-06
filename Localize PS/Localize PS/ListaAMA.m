@@ -36,8 +36,7 @@
             [PS setIs24hrs:[ama valueForKey:@"is24hrs"]];
             [PS setTelefone:[ama valueForKey:@"Telefone"]];
             [PS setLatitude:[ama valueForKey:@"Latitude"]];
-            [PS setLatitude:[ama valueForKey:@"Longitude"]];
-            //[AllAMA insertObject:PS atIndex:i];
+            [PS setLongitude:[ama valueForKey:@"Longitude"]];
             
             
             NSLog(@"Nomes = %@",PS.nome);

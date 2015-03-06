@@ -18,5 +18,6 @@
 @synthesize longitude;
 @synthesize telefone;
 @synthesize is24hrs;
+@synthesize distancia;
 
 @end

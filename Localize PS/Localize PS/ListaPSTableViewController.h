@@ -7,12 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 #import "AMA.h"
 #import "ListaAMA.h"
 #import "PSTableViewCell.h"
 
-@interface ListaPSTableViewController : UITableViewController 
+@interface ListaPSTableViewController : UITableViewController<CLLocationManagerDelegate>
+
+@property CLLocationManager *locationManager;
+@property CLLocationManager *armazenar;
+@property CLLocationCoordinate2D * latiduteUM;
+@property CLLocationCoordinate2D *longitudeUM;
+
+-(double)CalculoDistancia :(double)LatitudeUm :(double)LatitudeDois :(double)LongitudeUm :(double)LongitudeDois;
 
 
-@property NSMutableArray *Lista;
+
 @end

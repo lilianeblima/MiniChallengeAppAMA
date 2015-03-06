@@ -13,7 +13,6 @@
 
 -(instancetype) initWithPlacemark:(MKPlacemark *)placemark;
 
-//@property double distancia;
 @property MKPlacemark *placemark;
 @property double distancia;
 

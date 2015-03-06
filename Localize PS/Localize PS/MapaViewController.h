@@ -17,6 +17,7 @@
 {
     bool placesLocated;
     bool searching;
+    CLPlacemark *thePlacemark;
 }
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;

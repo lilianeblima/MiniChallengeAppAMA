@@ -39,6 +39,13 @@
     
     [_atualizarPS setHidden:YES];     // ocultar voltarNav
     
+    PointMarker *ps = [[PointMarker alloc] init];
+    [_mapView addAnnotation:ps];
+    [_mapView selectAnnotation:ps animated: YES];
+    [ps setTitle:@"Teste"];
+    [ps setTitle:@"Teste sadasd asdas da"];
+    
+    
     [super viewDidLoad];
     
 }
@@ -79,15 +86,6 @@
     
 }
 
-+ (instancetype)sharedInstance {
-    static dispatch_once_t onceToken = 0;
-    __strong static MapaViewController *instance = nil;
-    dispatch_once(&onceToken,^{
-        instance = [[self alloc] init];
-    });
-    
-    return instance;
-}
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     [manager stopUpdatingLocation];
@@ -187,56 +185,86 @@
     placesLocated = YES;
 }
 
-- (IBAction)rotaBotao:(id)sender {
-    
-    [self performSegueWithIdentifier:@"routeSegue" sender:sender];
+- (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views {
+    MKAnnotationView *aV;
+    for (aV in views) {
+        if ([aV.annotation isKindOfClass:[MKUserLocation class]]) {
+            MKAnnotationView* annotationView = aV;
+            annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        }
+    }
 }
+
+- (void) calculoDistancia {
+    CLLocation *distancia = [[CLLocation alloc] initWithLatitude: [] longitude:<#(CLLocationDegrees)#>]
+}
+
+- (IBAction)rotaBotao:(id)sender {
+    MKDirectionsRequest *directionsRequest = [[MKDirectionsRequest alloc] init];
+    MKPlacemark *placemark = [[MKPlacemark alloc] initWithPlacemark:thePlacemark];
+    [directionsRequest setSource:[MKMapItem mapItemForCurrentLocation]];
+    [directionsRequest setDestination:[[MKMapItem alloc] initWithPlacemark: thePlacemark]];
+    directionsRequest.transportType = MKDirectionsTransportTypeAutomobile;
+    MKDirections *directions = [[MKDirections alloc] initWithRequest:directionsRequest];
+    [directions calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error) {
+        if (error) {
+            NSLog(@"Error %@", error.description);
+        }
+    }];
+}
+
 #pragma mark dd
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
-    if ([annotation isKindOfClass:[MKUserLocation class]])
-    {
-        return nil;
-    }
-    else if ([annotation isKindOfClass:[PointMarker class]]) // use whatever annotation class you used when creating the annotation
+
+//    if ([annotation isKindOfClass:[MKUserLocation class]]){
+//        
+//        MKAnnotationView *annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation                                                                           reuseIdentifier:nil];
+//        annotationView.image = [UIImage imageNamed:@"standing39-3.png"];
+//        annotationView.enabled=NO;
+//        return annotationView;
+//    }
+//    else
+   if ([annotation isKindOfClass:[PointMarker class]]) // use whatever annotation class you used when creating the annotation
     {
         static NSString * const identifier = @"MyCustomAnnotation";
         
-        MKPinAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        MKAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        if ( annotationView == nil){
+            annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier: identifier];
+        }
+        else
+            annotationView.annotation = annotation;
         
-        [annotationView setAnimatesDrop:YES];
-        [annotationView setPinColor:MKPinAnnotationColorPurple];
-        annotationView.canShowCallout = NO;
-        
+        annotationView.canShowCallout = YES;
         return annotationView;
     }
     return nil;
 }
-
-- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKPinAnnotationView *)view
-{
-    
-    self.nomeLabel.text = [view.annotation title];
-    self.telefoneLabel.text = [view.annotation subtitle];
-    self.distanciaLabel.text = [view.annotation subtitle];
-    
-    self.blurViewOutlet.hidden = NO;
-    
-    view.pinColor = MKPinAnnotationColorGreen;
-    
-    MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:[view.annotation coordinate] addressDictionary:nil];
-    
-    self.routeDestination = [[PointMarker alloc] initWithCoordinate:placemark.coordinate title:[view.annotation title] Subtitle:@""];
-    
-    
-}
+//
+//- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKPinAnnotationView *)view
+//{
+//    
+//    self.nomeLabel.text = [view.annotation title];
+//    self.telefoneLabel.text = [view.annotation subtitle];
+//    self.distanciaLabel.text = [view.annotation subtitle];
+//    
+//    self.blurViewOutlet.hidden = NO;
+//    view.pinColor = MKPinAnnotationColorGreen;
+//    
+//    MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:[view.annotation coordinate] addressDictionary:nil];
+//    
+//    self.routeDestination = [[PointMarker alloc] initWithCoordinate:placemark.coordinate title:[view.annotation title] Subtitle:@""];
+//    
+//    
+//}
 
 -(void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKPinAnnotationView *)view {
     
     self.routeDestination = nil;
     self.blurViewOutlet.hidden = YES;
-    view.pinColor = MKPinAnnotationColorPurple;
+    //view.pinColor = MKPinAnnotationColorPurple;
     
 }
 

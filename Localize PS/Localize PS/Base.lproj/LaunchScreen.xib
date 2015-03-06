@@ -20,9 +20,28 @@
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Localize PS" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
                     <rect key="frame" x="20" y="140" width="441" height="43"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="4ea-5n-cTB">
+                    <rect key="frame" x="120" y="176" width="240" height="89"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="89" id="j2E-vN-ZwD"/>
+                        <constraint firstAttribute="width" constant="240" id="u1N-hP-ccM"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="j2E-vN-ZwD"/>
+                            <exclude reference="u1N-hP-ccM"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="j2E-vN-ZwD"/>
+                            <include reference="u1N-hP-ccM"/>
+                        </mask>
+                    </variation>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -32,10 +51,30 @@
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
+                <constraint firstAttribute="trailing" secondItem="4ea-5n-cTB" secondAttribute="trailing" constant="120" id="m3Y-c8-nyz"/>
+                <constraint firstItem="4ea-5n-cTB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="176" id="ro6-L8-QLp"/>
+                <constraint firstItem="4ea-5n-cTB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="120" id="xXI-P8-wIj"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="m3Y-c8-nyz"/>
+                    <exclude reference="ro6-L8-QLp"/>
+                    <exclude reference="xXI-P8-wIj"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="m3Y-c8-nyz"/>
+                    <include reference="ro6-L8-QLp"/>
+                    <include reference="xXI-P8-wIj"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
+    <resources>
+        <image name="Logo-1" width="900" height="300"/>
+    </resources>
 </document>

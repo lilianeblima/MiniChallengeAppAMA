@@ -7,17 +7,14 @@
 //
 
 #import "MapaViewController.h"
-#import "ListaAMA.h"
 
 
 @implementation MapaViewController
-{
-    ListaAMA *itens;
-}
 
 -(void)viewDidLoad{
     
-    itens = [ListaAMA ItensCompartilhado];
+    amas = [ListaAMA ItensCompartilhado];
+    auxiliar = [[AMA alloc]init];
     
     placesLocated = NO;
     searching = NO;
@@ -202,7 +199,12 @@
 }
 
 - (void) calculoDistancia {
-    //CLLocation *distancia = [[CLLocation alloc] initWithLatitude: [] longitude:<#(CLLocationDegrees)#>]
+    
+    for (int i=0; i < [amas.AllAMA count]; i++){
+    auxiliar = [amas amaForIndex:i];
+        CLLocation *distancia = [[CLLocation alloc] initWithLatitude:[auxiliar.latitude doubleValue]  longitude: [auxiliar.longitude doubleValue]];
+        
+    }
 }
 
 - (IBAction)rotaBotao:(id)sender {

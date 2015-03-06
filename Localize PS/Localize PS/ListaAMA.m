@@ -99,4 +99,12 @@
 }
 
 
+- (AMA *) amaForIndex: (NSInteger)index {
+    if([AllAMA count] <= index){
+        return nil;
+    }
+    return AllAMA[index];
+}
+
+
 @end

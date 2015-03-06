@@ -12,12 +12,16 @@
 #import "MapKit/MKAnnotation.h"
 #import "PointMarker.h"
 #import "Place.h"
+#import "ListaAMA.h"
+
 
 @interface MapaViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
 {
     bool placesLocated;
     bool searching;
     CLPlacemark *thePlacemark;
+    ListaAMA *amas;
+    AMA *auxiliar;
 }
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;

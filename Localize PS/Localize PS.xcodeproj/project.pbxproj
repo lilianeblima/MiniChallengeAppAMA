@@ -26,7 +26,6 @@
 		21A977241AA72EFB00ED4823 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A977231AA72EFB00ED4823 /* CoreGraphics.framework */; };
 		21ABF5C91AA8A09500BD36C9 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ABF5C81AA8A09500BD36C9 /* Place.m */; };
 		21ABF5CC1AA8A0A900BD36C9 /* PointMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ABF5CB1AA8A0A900BD36C9 /* PointMarker.m */; };
-		848CB6181AA9CFC200885044 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 848CB6171AA9CFC200885044 /* Logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +71,6 @@
 		21ABF5C81AA8A09500BD36C9 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Place.m; path = "Localize PS/Place.m"; sourceTree = "<group>"; };
 		21ABF5CA1AA8A0A900BD36C9 /* PointMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointMarker.h; sourceTree = "<group>"; };
 		21ABF5CB1AA8A0A900BD36C9 /* PointMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointMarker.m; sourceTree = "<group>"; };
-		848CB6171AA9CFC200885044 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = ../../../../Documents/Logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				11526E1F1AA728BC00BFE981 /* Info.plist */,
-				848CB6171AA9CFC200885044 /* Logo.png */,
 				11526E201AA728BC00BFE981 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -297,7 +294,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848CB6181AA9CFC200885044 /* Logo.png in Resources */,
 				11526E2A1AA728BC00BFE981 /* Main.storyboard in Resources */,
 				21A977181AA72B5900ED4823 /* fontawesome-webfont.ttf in Resources */,
 				11526E2F1AA728BC00BFE981 /* LaunchScreen.xib in Resources */,

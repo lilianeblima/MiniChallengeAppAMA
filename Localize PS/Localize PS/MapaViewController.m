@@ -44,7 +44,6 @@
     CLLocationCoordinate2D loc;
     loc = [[_locationManager location]coordinate];
     [self calculoDistancia: loc];
-    [self calculoDistancia];
     
     PointMarker *ps = [[PointMarker alloc] init];
     [_mapView addAnnotation:ps];
@@ -199,9 +198,8 @@
     }
 }
 
-- (void) calculoDistancia {
-    CLLocationCoordinate2D loca = [[_locationManager location]coordinate];
-    CLLocation *inicial = [[CLLocation alloc] initWithLatitude:loca.latitude longitude: loca.longitude];
+- (void) calculoDistancia : (CLLocationCoordinate2D) loc{
+    CLLocation *inicial = [[CLLocation alloc] initWithLatitude:loc.latitude longitude: loc.longitude];
     CLLocationDistance distancia;
     CLLocation *coordenadas;
     
@@ -213,8 +211,6 @@
         [auxiliar setDistanciaMapa:distancia/1000];
     
     }
-    [amas exibirInfo];
-    
     
 }
 

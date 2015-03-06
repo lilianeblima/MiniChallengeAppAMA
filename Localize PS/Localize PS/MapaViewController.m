@@ -6,12 +6,18 @@
 //  Copyright (c) 2015 Liliane Bezerra Lima. All rights reserved.
 //
 
-#import "MapaViewController.h"\
+#import "MapaViewController.h"
+#import "ListaAMA.h"
 
 
 @implementation MapaViewController
+{
+    ListaAMA *itens;
+}
 
 -(void)viewDidLoad{
+    
+    itens = [ListaAMA ItensCompartilhado];
     
     placesLocated = NO;
     searching = NO;

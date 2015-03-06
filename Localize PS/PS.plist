@@ -14,7 +14,7 @@
 		<key>Longitude</key>
 		<string>-46.40928228</string>
 		<key>is24hrs</key>
-		<string>NÃO</string>
+		<string>07:00 - 19:00</string>
 		<key>Telefone</key>
 		<string>2035-4034</string>
 	</dict>
@@ -30,7 +30,7 @@
 		<key>Longitude</key>
 		<string>-48.31578309</string>
 		<key>is24hrs</key>
-		<string>NÃO</string>
+		<string>07:00 - 19:00</string>
 		<key>Telefone</key>
 		<string>3782-8518</string>
 	</dict>
@@ -46,7 +46,7 @@
 		<key>Longitude</key>
 		<string>-46.72845952</string>
 		<key>is24hrs</key>
-		<string>SIM</string>
+		<string>24hrs</string>
 		<key>Telefone</key>
 		<string>3974-7000</string>
 	</dict>

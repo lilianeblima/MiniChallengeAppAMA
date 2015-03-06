@@ -180,8 +180,8 @@
     cell.HTelefone.text = ama.telefone;
     cell.HEndereco.text = ama.endereco;
     cell.HRegiao.text = ama.regiao;
-    //cell.HHorario.text = ama.is24hrs;
-    cell.HHorario.text = [NSString stringWithFormat:@"%@", ama.distancia ];
+    cell.HHorario.text = ama.is24hrs;
+  //  cell.HHorario.text = [NSString stringWithFormat:@"%@", ama.distancia ];
     //
     return cell;
 }

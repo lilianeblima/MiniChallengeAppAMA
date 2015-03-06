@@ -196,7 +196,7 @@
 }
 
 - (void) calculoDistancia {
-    CLLocation *distancia = [[CLLocation alloc] initWithLatitude: [] longitude:<#(CLLocationDegrees)#>]
+    //CLLocation *distancia = [[CLLocation alloc] initWithLatitude: [] longitude:<#(CLLocationDegrees)#>]
 }
 
 - (IBAction)rotaBotao:(id)sender {

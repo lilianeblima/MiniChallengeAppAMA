@@ -16,6 +16,7 @@
 -(id) init;
 -(void)nomes;
 -(AMA*)retorno:(NSNumber*)i;
++ (id)ItensCompartilhado;
 
 @end
 

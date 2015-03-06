@@ -89,4 +89,14 @@
 }
 
 
++ (id)ItensCompartilhado {
+    static ListaAMA *ItensCompartilhado = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        ItensCompartilhado = [[self alloc] init];
+    });
+    return ItensCompartilhado;
+}
+
+
 @end

@@ -17,10 +17,10 @@
 
 @property CLLocationManager *locationManager;
 @property CLLocationManager *armazenar;
-@property CLLocationCoordinate2D * latiduteUM;
-@property CLLocationCoordinate2D *longitudeUM;
+@property NSString * latiduteUM;
+@property NSString *longitudeUM;
 
--(double)CalculoDistancia :(double)LatitudeUm :(double)LatitudeDois :(double)LongitudeUm :(double)LongitudeDois;
+
 
 
 

@@ -13,10 +13,12 @@
 
 @interface ListaPSTableViewController ()
 {
-    AMA *ama;
+    AMA *ama,*ama2;
     ListaAMA *listaAma;
-    CLLocationCoordinate2D loc;
+    CLLocationCoordinate2D loc,lat;
     NSArray *locali;
+    
+    
     //CLLocationManager *locationManager;
     
     
@@ -47,7 +49,6 @@
     
     //Define que o delegate sera esta clase
     [_locationManager setDelegate: self];
-    
     if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
         [self.locationManager requestWhenInUseAuthorization];
     }
@@ -55,6 +56,17 @@
     //Começa monitorar localização
     [_locationManager startUpdatingLocation];
     
+    
+    
+    lat = [_locationManager location].coordinate;
+    
+    for (int a; a<[listaAma.AllAMA count]; a++) {
+        
+        double valor = [self DistanceBetweenCoordinate:lat andCoordinate: [ama.latitude doubleValue] andLong:[ama.longitude doubleValue]];
+        NSLog(@"Valor = %f",valor);
+        
+        
+    }
     
     
     
@@ -103,27 +115,41 @@
         // longitudeUM = [currentLocation.coordinate.longitude];
         
         
-        NSString *lo = [NSString stringWithFormat:@"%.8f",currentLocation.coordinate.longitude];
+        _longitudeUM  = [NSString stringWithFormat:@"%.8f",currentLocation.coordinate.longitude];
         
-        NSString *lat = [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.latitude];
+        _latiduteUM  = [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.latitude];
         
-        // NSLog(@"Lat= %@",lat);
-        //  NSLog(@"Lo= %@", lo);
     }
     
 }
 
--(double)CalculoDistancia :(double)LatitudeUm :(double)LatitudeDois :(double)LongitudeUm :(double)LongitudeDois
+-(CLLocationDistance) DistanceBetweenCoordinate:(CLLocationCoordinate2D)origenCoordinete andCoordinate:(double )LatDestion andLong:(double)LongDestion
 {
+    CLLocation *originlocation = [[CLLocation alloc]initWithLatitude:origenCoordinete.latitude longitude:origenCoordinete.longitude];
     
-    double distancia;
-    double Pi = 3.1415926536;
+    CLLocation *destination = [[CLLocation alloc]initWithLatitude:LatDestion longitude:LongDestion];
     
-    distancia = ((acos(cos((90 - LatitudeUm)* Pi/180)*cos((90 - LatitudeDois) * Pi/180)+ sin((90 - LatitudeUm)* Pi/180)*sin((90 - LatitudeDois)* Pi/180) * cos(ABS(((360 + LongitudeUm)* Pi/180) - ((360 + LongitudeDois)* Pi/180)))))*6371.004) * 1000;
+    CLLocationDistance distance = [originlocation distanceFromLocation:destination];
     
-    return distancia;
+    return distance;
     
 }
+
+
+
+
+
+//-(double)CalculoDistancia :(double)LatitudeUm :(double)LatitudeDois :(double)LongitudeUm :(double)LongitudeDois
+//{
+//
+//    double distancia;
+//    double Pi = 3.1415926536;
+//
+//    distancia = ((acos(cos((90 - LatitudeUm)* Pi/180)*cos((90 - LatitudeDois) * Pi/180)+ sin((90 - LatitudeUm)* Pi/180)*sin((90 - LatitudeDois)* Pi/180) * cos(ABS(((360 + LongitudeUm)* Pi/180) - ((360 + LongitudeDois)* Pi/180)))))*6371.004) * 1000;
+//
+//    return distancia;
+//
+//}
 
 
 #pragma mark - Table view data source
@@ -148,41 +174,33 @@
     
     PSTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PSTableCell" forIndexPath:indexPath];
     
+    [self sortAllAma];
+    
+    AMA *currentAma = [listaAma.AllAMA objectAtIndex:[indexPath row]];
+    
     if (cell == nil)
     {
         cell = [[PSTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"PSTableCell"];
     }
     
-    double dist;
-    
-    double latdouble = [ama.latitude doubleValue];
-    double lotdouble = [ama.longitude doubleValue];
-    
-        NSLog(@"LongD=%f",lotdouble);
-        NSLog(@"LatD=%f",latdouble);
-    
-        NSLog(@"LatS%@",ama.latitude);
-        NSLog(@"LonS%@",ama.longitude);
-    
-    dist = [self CalculoDistancia:-23.545791 :latdouble :-46.65215 :lotdouble];
-    
-    
-    // ama = [retorno:indexPath.row];
-    ama = [listaAma.AllAMA objectAtIndex:indexPath.row];
-    
-    //  [ama setDistancia:[NSNumber numberWithDouble:[self.CalculoDistancia :_LatitudeUm :-23.5328287 :_LongitudeUm :-46.6666176]]];
-    
-    [ama setDistancia:[NSNumber numberWithDouble:dist]];
     
     
     
-    cell.HNome.text = ama.nome;
-    cell.HTelefone.text = ama.telefone;
-    cell.HEndereco.text = ama.endereco;
-    cell.HRegiao.text = ama.regiao;
-    cell.HHorario.text = ama.is24hrs;
-  //  cell.HHorario.text = [NSString stringWithFormat:@"%@", ama.distancia ];
+    cell.HNome.text = currentAma.nome;
+    cell.HTelefone.text = currentAma.telefone;
+    cell.HEndereco.text = currentAma.endereco;
+    cell.HRegiao.text = currentAma.regiao;
+    //cell.HHorario.text = currentAma.is24hrs;
+    cell.HHorario.text = [NSString stringWithFormat:@"%f", currentAma.distancia];
+    
+    NSLog(@"%@", cell.HHorario.text);
+    
     //
+    
+    
+    
+    
+    
     return cell;
 }
 
@@ -235,6 +253,24 @@
 }
 
 
+-(void)sortAllAma{
+    for (int i = 0; i < [listaAma.AllAMA count]; i++) {
+        AMA *currentAma = listaAma.AllAMA[i];
+        
+        
+        
+        CLLocationDistance auxDistance = [self DistanceBetweenCoordinate:lat andCoordinate: [currentAma.latitude doubleValue] andLong:[currentAma.longitude doubleValue]];
+        
+        [currentAma setDistancia:auxDistance];
+        [listaAma.AllAMA replaceObjectAtIndex:i withObject:currentAma];
+    }
+    
+    NSSortDescriptor *modelDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"distancia" ascending:YES];
+    NSArray *sortDescriptors = [NSArray arrayWithObject:modelDescriptor];
+    NSArray *sortedArray = [listaAma.AllAMA sortedArrayUsingDescriptors:sortDescriptors];
+    
+    [listaAma setAllAMA:[sortedArray mutableCopy]];
+}
 /*
  #pragma mark - Navigation
  

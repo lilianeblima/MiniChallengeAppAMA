@@ -498,6 +498,105 @@
             </objects>
             <point key="canvasLocation" x="873" y="693"/>
         </scene>
+        <!--Mapa Tabela View Controller-->
+        <scene sceneID="KRn-3Q-xly">
+            <objects>
+                <viewController id="ht5-9e-mtW" customClass="Mapa_TabelaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z1X-Bz-pyr"/>
+                        <viewControllerLayoutGuide type="bottom" id="FQM-l3-HyQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jCS-ai-pqB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxO-WY-uX7">
+                                <rect key="frame" x="279" y="116" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sU4-YR-7kf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="sU4-YR-7kf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="sU4-YR-7kf"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cqK-XS-C4t">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmA-09-6BH">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Atualizar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BAtualizar:" destination="ht5-9e-mtW" eventType="touchUpInside" id="ARW-Rx-0py"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cqK-XS-C4t" firstAttribute="leading" secondItem="jCS-ai-pqB" secondAttribute="leadingMargin" constant="7" id="3ed-wW-pyS"/>
+                            <constraint firstItem="bxO-WY-uX7" firstAttribute="top" secondItem="Z1X-Bz-pyr" secondAttribute="bottom" constant="52" id="9fn-7x-QJO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fmA-09-6BH" secondAttribute="trailing" constant="42" id="AAc-Tp-XxV"/>
+                            <constraint firstItem="cqK-XS-C4t" firstAttribute="top" secondItem="Z1X-Bz-pyr" secondAttribute="bottom" constant="37" id="LhO-oL-FeR"/>
+                            <constraint firstItem="FQM-l3-HyQ" firstAttribute="top" secondItem="bxO-WY-uX7" secondAttribute="bottom" constant="148" id="T6D-4d-UDP"/>
+                            <constraint firstItem="cqK-XS-C4t" firstAttribute="centerX" secondItem="jCS-ai-pqB" secondAttribute="centerX" id="mtA-lU-iyb"/>
+                            <constraint firstItem="fmA-09-6BH" firstAttribute="centerY" secondItem="bxO-WY-uX7" secondAttribute="centerY" id="oQg-Sg-wfK"/>
+                            <constraint firstItem="bxO-WY-uX7" firstAttribute="top" secondItem="cqK-XS-C4t" secondAttribute="bottom" constant="53" id="w9w-Ut-XOD"/>
+                            <constraint firstItem="bxO-WY-uX7" firstAttribute="leading" secondItem="jCS-ai-pqB" secondAttribute="leadingMargin" constant="80" id="xOK-Q6-umZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="cqK-XS-C4t"/>
+                                <exclude reference="fmA-09-6BH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3ed-wW-pyS"/>
+                                <exclude reference="LhO-oL-FeR"/>
+                                <exclude reference="mtA-lU-iyb"/>
+                                <exclude reference="w9w-Ut-XOD"/>
+                                <exclude reference="xOK-Q6-umZ"/>
+                                <exclude reference="AAc-Tp-XxV"/>
+                                <exclude reference="oQg-Sg-wfK"/>
+                                <exclude reference="T6D-4d-UDP"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="cqK-XS-C4t"/>
+                                <include reference="fmA-09-6BH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3ed-wW-pyS"/>
+                                <include reference="LhO-oL-FeR"/>
+                                <include reference="mtA-lU-iyb"/>
+                                <exclude reference="9fn-7x-QJO"/>
+                                <include reference="w9w-Ut-XOD"/>
+                                <include reference="xOK-Q6-umZ"/>
+                                <include reference="AAc-Tp-XxV"/>
+                                <include reference="oQg-Sg-wfK"/>
+                                <include reference="T6D-4d-UDP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="MapaT" destination="cqK-XS-C4t" id="AEI-N5-RCF"/>
+                        <outlet property="labelteste" destination="bxO-WY-uX7" id="ZhY-UP-86f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7l-NU-f6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="1525"/>
+        </scene>
         <!--ListaPS Table View Controller-->
         <scene sceneID="LPQ-vh-6uT">
             <objects>
@@ -756,10 +855,13 @@
                             <outlet property="delegate" destination="vw2-c6-GN9" id="PTS-4m-sPw"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="ht5-9e-mtW" kind="show" identifier="showMapSegue" id="nFB-61-eY1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYN-Js-W1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1768.5" y="1449"/>
+            <point key="canvasLocation" x="1836" y="1457"/>
         </scene>
         <!--AMAs Próximos-->
         <scene sceneID="fMR-eR-V6e">

@@ -9,15 +9,27 @@
 #import "ViewController.h"
 #import "MapaViewController.h"
 
+
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    //Pega instancia
+   // self.LocManager = [[CLLocationManager alloc] init];
+    
+    
+    //Define precisão do GPS
+
+    
 }
 
 

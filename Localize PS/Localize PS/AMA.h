@@ -19,7 +19,7 @@
 @property NSString *longitude;
 @property NSString *is24hrs;
 @property NSString *telefone;
-@property NSNumber *distancia;
+@property CLLocationDistance distancia;
 @property float distanciaMapa;
 
 

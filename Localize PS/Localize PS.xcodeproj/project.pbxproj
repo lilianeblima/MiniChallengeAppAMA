@@ -18,6 +18,7 @@
 		11526E4A1AA7486300BFE981 /* AMA.m in Sources */ = {isa = PBXBuildFile; fileRef = 11526E491AA7486300BFE981 /* AMA.m */; };
 		11526E4D1AA74BA100BFE981 /* ListaAMA.m in Sources */ = {isa = PBXBuildFile; fileRef = 11526E4C1AA74BA100BFE981 /* ListaAMA.m */; };
 		11668F4B1AA78B5E0013918C /* PSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11668F4A1AA78B5E0013918C /* PSTableViewCell.m */; };
+		11F0EFDE1AAA3DE5006E5752 /* Mapa_TabelaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F0EFDD1AAA3DE5006E5752 /* Mapa_TabelaViewController.m */; };
 		21A977181AA72B5900ED4823 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21A977171AA72B5900ED4823 /* fontawesome-webfont.ttf */; };
 		21A9771B1AA72C3C00ED4823 /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A9771A1AA72C3C00ED4823 /* MapaViewController.m */; };
 		21A9771E1AA72E4F00ED4823 /* ListaPSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A9771D1AA72E4F00ED4823 /* ListaPSTableViewController.m */; };
@@ -59,6 +60,8 @@
 		11526E4C1AA74BA100BFE981 /* ListaAMA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListaAMA.m; path = "Localize PS/ListaAMA.m"; sourceTree = "<group>"; };
 		11668F491AA78B5E0013918C /* PSTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSTableViewCell.h; path = "Localize PS/PSTableViewCell.h"; sourceTree = "<group>"; };
 		11668F4A1AA78B5E0013918C /* PSTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSTableViewCell.m; path = "Localize PS/PSTableViewCell.m"; sourceTree = "<group>"; };
+		11F0EFDC1AAA3DE5006E5752 /* Mapa_TabelaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapa_TabelaViewController.h; sourceTree = "<group>"; };
+		11F0EFDD1AAA3DE5006E5752 /* Mapa_TabelaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mapa_TabelaViewController.m; sourceTree = "<group>"; };
 		21A977171AA72B5900ED4823 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		21A977191AA72C3C00ED4823 /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
 		21A9771A1AA72C3C00ED4823 /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 				21A977191AA72C3C00ED4823 /* MapaViewController.h */,
 				21A9771D1AA72E4F00ED4823 /* ListaPSTableViewController.m */,
 				21A9771C1AA72E4F00ED4823 /* ListaPSTableViewController.h */,
+				11F0EFDC1AAA3DE5006E5752 /* Mapa_TabelaViewController.h */,
+				11F0EFDD1AAA3DE5006E5752 /* Mapa_TabelaViewController.m */,
 				11526E261AA728BC00BFE981 /* ViewController.m */,
 				11526E251AA728BC00BFE981 /* ViewController.h */,
 			);
@@ -322,6 +327,7 @@
 				11668F4B1AA78B5E0013918C /* PSTableViewCell.m in Sources */,
 				11526E241AA728BC00BFE981 /* AppDelegate.m in Sources */,
 				11526E4D1AA74BA100BFE981 /* ListaAMA.m in Sources */,
+				11F0EFDE1AAA3DE5006E5752 /* Mapa_TabelaViewController.m in Sources */,
 				11526E4A1AA7486300BFE981 /* AMA.m in Sources */,
 				21ABF5C91AA8A09500BD36C9 /* Place.m in Sources */,
 				11526E211AA728BC00BFE981 /* main.m in Sources */,

@@ -9,15 +9,16 @@
 #import "ListaPSTableViewController.h"
 #import "PSTableViewCell.h"
 #import "ListaAMA.h"
+#import "Mapa_TabelaViewController.h"
 
 
 @interface ListaPSTableViewController ()
 {
-    AMA *ama,*ama2;
+    AMA *ama,*ama2, *itemSelecionado;
+    CLLocationManager *coordenadaSelecionada;
     ListaAMA *listaAma;
     CLLocationCoordinate2D loc,lat;
     NSArray *locali;
-    
     
     //CLLocationManager *locationManager;
     
@@ -59,6 +60,7 @@
     
     
     lat = [_locationManager location].coordinate;
+    loc = [_locationManager location].coordinate;
     
     for (int a; a<[listaAma.AllAMA count]; a++) {
         
@@ -167,8 +169,13 @@
 }
 
 
-
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    itemSelecionado = [listaAma.AllAMA objectAtIndex:[indexPath row]];
+    loc = lat;
+    
+    [self performSegueWithIdentifier:@"showMapSegue" sender:tableView];
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -244,7 +251,15 @@
     
 }
 
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    Mapa_TabelaViewController *proximaView = segue.destinationViewController;
+    
+    proximaView.loc = &(loc);
+    
+    proximaView.itemSelecionado = itemSelecionado;
+    
+}
 
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {

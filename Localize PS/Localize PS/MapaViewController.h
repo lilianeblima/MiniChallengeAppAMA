@@ -23,6 +23,9 @@
     ListaAMA *amas;
     AMA *auxiliar;
     ListaAMA *amasAuxiliar;
+    CLLocationCoordinate2D loc;
+    MKRoute *rota;
+
 }
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;

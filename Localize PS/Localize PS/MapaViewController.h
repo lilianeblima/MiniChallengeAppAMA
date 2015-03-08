@@ -30,8 +30,6 @@
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property CLLocationManager *locationManager;
 
-- (IBAction)mostraRota:(id)sender;
-- (IBAction)localizacaoAtual:(id)sender;
 - (IBAction)atualizarPS:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *atualizarPS;
 
@@ -45,7 +43,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *distanciaLabel;
 @property (weak, nonatomic) IBOutlet UILabel *endereco;
 
-+ (instancetype)sharedInstance;
 
 - (IBAction)rotaBotao:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *rotaBotao;

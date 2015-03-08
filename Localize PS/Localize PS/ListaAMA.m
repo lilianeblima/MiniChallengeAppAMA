@@ -23,7 +23,6 @@
     i=0;
     if (self) {
         AllAMA = [[NSMutableArray alloc] init];
-        PS.distanciaMapa = 02;
         
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"PS" ofType:@"plist"];
         NSArray *amas = [NSArray arrayWithContentsOfFile:filePath];

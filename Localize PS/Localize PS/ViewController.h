@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "MapKit/MKAnnotation.h"
+#import "PointMarker.h"
+#import "Place.h"
+#import "ListaAMA.h"
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate>
 {
@@ -18,7 +21,7 @@ NSArray *query;
 
 }
 
-+ (instancetype)singleton;
+@property CLLocationManager *locationManager;
 
 
 - (IBAction)mostraMapa:(id)sender;

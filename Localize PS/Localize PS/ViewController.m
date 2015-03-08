@@ -19,16 +19,27 @@
 
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
     
     //Pega instancia
-   // self.LocManager = [[CLLocationManager alloc] init];
+    _locationManager = [[CLLocationManager alloc] init];
     
     
     //Define precisão do GPS
-
+    [_locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+    
+    
+    //Define que o delegate sera esta clase
+    [_locationManager setDelegate: self];
+    
+    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [self.locationManager requestWhenInUseAuthorization];
+    }
+    
+    //Começa monitorar localização
+    [_locationManager startUpdatingLocation];
+    
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
     
 }
 

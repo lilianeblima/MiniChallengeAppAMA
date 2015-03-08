@@ -17,6 +17,7 @@
     amaMaisProxima = [[AMA alloc]init];
     
     searching = NO;
+    
     [self.blurViewOutlet setHidden:YES];
     
     [self.mapView setDelegate:self];
@@ -46,23 +47,28 @@
     
     //chama a funcao calculoDistancia mandando a localização atual
     loc = [[_locationManager location]coordinate];
-    [self calculoDistancia: loc];
+    [self calculoDistancia:loc];
+    [amas exibirInfo];
+    
+    
     
 //    PointMarker *ps = [[PointMarker alloc] init];
 //    [_mapView addAnnotation:ps];
 //    [_mapView selectAnnotation:ps animated: YES];
 //
-    [self NearestPS];
+    
     [super viewDidLoad];
     
 }
 
+
 - (void)viewDidDisappear:(BOOL)animated{
-    //[self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
     
     NSLog(@"disappear");
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -84,12 +90,13 @@
 }
 
 -(void)traceRoute:(MKMapItem *) source to: (MKMapItem *) destination {
+    [_mapView removeOverlay:rota.polyline];
     
     MKDirectionsRequest *request = [[MKDirectionsRequest alloc] init];
     
     [request setSource:source];
     [request setDestination:destination];
-    [request setTransportType:MKDirectionsTransportTypeWalking];
+    [request setTransportType:MKDirectionsTransportTypeAutomobile];
     
     MKDirections *directions = [[MKDirections alloc] initWithRequest:request];
     
@@ -198,7 +205,6 @@
         distancia = [inicial distanceFromLocation: coordenadas];
         [amaMaisProxima setDistanciaMapa:distancia/1000];
     }
-    [amas exibirInfo];
     // Ordena de acordo com a distancia
     NSSortDescriptor *modelDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"distanciaMapa" ascending:NO];
     NSArray *sortDescriptors = [NSArray arrayWithObject:modelDescriptor];
@@ -207,6 +213,7 @@
     [amas setAllAMA:[sortedArray mutableCopy]];
     [amas exibirInfo];
     amaMaisProxima = nil;
+    [self NearestPS];
 
 }
 

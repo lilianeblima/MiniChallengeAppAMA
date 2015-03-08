@@ -4,9 +4,393 @@
 <array>
 	<dict>
 		<key>Nome</key>
+		<string>AMA/UBS V GUILHERME</string>
+		<key>Endereco</key>
+		<string>R. JOÃO VENTURA BATISTA, 615</string>
+		<key>Regiao</key>
+		<string>VILA GUILHERME</string>
+		<key>Latitude</key>
+		<string>-23.516338</string>
+		<key>Longitude</key>
+		<string>-46.605492</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2904-8270/ 2901-5883</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AMA ELISA MARIA</string>
+		<key>Endereco</key>
+		<string>RUA RÔMULO NALDI, 1</string>
+		<key>Regiao</key>
+		<string>FREG /BRASILÂNDIA</string>
+		<key>Latitude</key>
+		<string>-23.4553684</string>
+		<key>Longitude</key>
+		<string>-46.6851022</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3981-0967</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA LAUZANE PTA</string>
+		<key>Endereco</key>
+		<string>RUA VALORBE, 80</string>
+		<key>Regiao</key>
+		<string>SANTANA / TUCURUVI</string>
+		<key>Latitude</key>
+		<string>-23.4753612</string>
+		<key>Longitude</key>
+		<string>-46.6418756</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2231-8619</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA VILA MEDEIROS</string>
+		<key>Endereco</key>
+		<string>RUA EURICO SODRE, 353</string>
+		<key>Regiao</key>
+		<string>V MARIA</string>
+		<key>Latitude</key>
+		<string>-23.4925452</string>
+		<key>Longitude</key>
+		<string>-46.5850908</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2202-2223</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA ELISIO TEIXEIR A LEITE</string>
+		<key>Endereco</key>
+		<string>RUA JOÃO AMADO COUTINHO, 400</string>
+		<key>Regiao</key>
+		<string>PIRITUBA</string>
+		<key>Latitude</key>
+		<string>-23.4461962</string>
+		<key>Longitude</key>
+		<string>-46.7145787</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3971-2572 / 3972-0888</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA JD BRASIL</string>
+		<key>Endereco</key>
+		<string>RUA FRANCISCO PEIXOTO BEZERRA, 400</string>
+		<key>Regiao</key>
+		<string>VILA MARIA</string>
+		<key>Latitude</key>
+		<string>-23.711058</string>
+		<key>Longitude</key>
+		<string>-46.687663</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2201-4101/ 2939-7808</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AMA PQ ANHANGUERA</string>
+		<key>Endereco</key>
+		<string>R. PIERRE RENOIR, 100</string>
+		<key>Regiao</key>
+		<string>PERUS</string>
+		<key>Latitude</key>
+		<string>-23.4312721</string>
+		<key>Longitude</key>
+		<string>-46.7873546</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3916-6160</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AMA JD IPANEMA</string>
+		<key>Endereco</key>
+		<string>R. PEDRO RAVARA, 11-A</string>
+		<key>Regiao</key>
+		<string>PIRITUBA</string>
+		<key>Latitude</key>
+		<string>-23.4463594</string>
+		<key>Longitude</key>
+		<string>-46.7495411</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3941-3457 / 3941-2119</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA JD JOAMAR</string>
+		<key>Endereco</key>
+		<string>RUA AIAMOPOLO LOBO, 60</string>
+		<key>Regiao</key>
+		<string>TREMEMBE</string>
+		<key>Latitude</key>
+		<string>-23.4492621</string>
+		<key>Longitude</key>
+		<string>-46.5960905</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2204-8387</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS AMA JD PERI</string>
+		<key>Endereco</key>
+		<string>AV. PERI RONCHETTI, 914 </string>
+		<key>Regiao</key>
+		<string>V. N. CACHOEIRINHA</string>
+		<key>Latitude</key>
+		<string>-23.4644962</string>
+		<key>Longitude</key>
+		<string>-46.6546121</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2231 - 8771</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA SITIO DO MANDAQUI</string>
+		<key>Endereco</key>
+		<string>RUA OSCAR DE MOURA LACERDA, 231</string>
+		<key>Regiao</key>
+		<string>V. N. CACHOEIRINHA</string>
+		<key>Latitude</key>
+		<string>-23.4867318</string>
+		<key>Longitude</key>
+		<string>-46.6553101</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2239-1561</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA PQ MARIA DOMITILA</string>
+		<key>Endereco</key>
+		<string>AV. ANASTÁCIO, 2421</string>
+		<key>Regiao</key>
+		<string>SÃO DOMINGOS</string>
+		<key>Latitude</key>
+		<string>-23.4883416</string>
+		<key>Longitude</key>
+		<string>-46.7380883</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3903-4825 / 3903-5572</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA CITY JARAGUA</string>
+		<key>Endereco</key>
+		<string>ESTRADA DE TAIPAS, 1648 - PIRITUBA</string>
+		<key>Regiao</key>
+		<string>JARAGUA</string>
+		<key>Latitude</key>
+		<string>-23.4422357</string>
+		<key>Longitude</key>
+		<string>-46.73468</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3947-2690 / 3928-4976</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA WAMBERTO DIAS COSTA</string>
+		<key>Endereco</key>
+		<string>RUA PAULO CÉSAR, 60</string>
+		<key>Regiao</key>
+		<string>TREMEMBE</string>
+		<key>Latitude</key>
+		<string>-23.4687552</string>
+		<key>Longitude</key>
+		<string>-46.6035845</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2203-8992</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA JD PAULISTANO</string>
+		<key>Endereco</key>
+		<string>RUA ENCRUZILHADA DO SUL, 220 </string>
+		<key>Regiao</key>
+		<string>BRASILANDIA</string>
+		<key>Latitude</key>
+		<string>-23.4614804</string>
+		<key>Longitude</key>
+		<string>-46.7090518</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3972-2916</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA PERUS</string>
+		<key>Endereco</key>
+		<string>PRAÇA VIGÁRIO JOÃO GONÇALVES DE LIMA, 239</string>
+		<key>Regiao</key>
+		<string>PERUS</string>
+		<key>Latitude</key>
+		<string>-23.4094798</string>
+		<key>Longitude</key>
+		<string>-46.7579496</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3915-6305 / 3917-6245</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA ANHANGUERA</string>
+		<key>Endereco</key>
+		<string>RUA MARCELA ALVES DE CÁSSIA, 175</string>
+		<key>Regiao</key>
+		<string>SÃO DOMINGOS</string>
+		<key>Latitude</key>
+		<string>-23.4890093</string>
+		<key>Longitude</key>
+		<string>-46.7593171</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3904 - 8999</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA V PEREIRA BARRETO</string>
+		<key>Endereco</key>
+		<string>RUA D. MANUEL D&apos;ELBOUX,76</string>
+		<key>Regiao</key>
+		<string>PIRITUBA</string>
+		<key>Latitude</key>
+		<string>-23.4875697</string>
+		<key>Longitude</key>
+		<string>-46.7131234</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3975-9019 / 3976-3845</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS /AMA V.PALMEIRAS</string>
+		<key>Endereco</key>
+		<string>R.FRANCISCO LOTUFO, 24</string>
+		<key>Regiao</key>
+		<string>FREG /BRASILÂNDIA</string>
+		<key>Latitude</key>
+		<string>-23.4945433</string>
+		<key>Longitude</key>
+		<string>-46.6852655</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3931-7923</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA LADEIRA ROSA</string>
+		<key>Endereco</key>
+		<string>RUA JOSÉ DA COSTA GAVIÃO,150</string>
+		<key>Regiao</key>
+		<string>BRASILANDIA</string>
+		<key>Latitude</key>
+		<string>-23.4617464</string>
+		<key>Longitude</key>
+		<string>-46.6733014</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3851-8818</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS /AMA V.BARBOSA</string>
+		<key>Endereco</key>
+		<string>AV.MANDAQUI, 197</string>
+		<key>Regiao</key>
+		<string>C.VERDE</string>
+		<key>Latitude</key>
+		<string>-23.5055315</string>
+		<key>Longitude</key>
+		<string>-46.6708486</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3858-1822</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA JD DAS OLIVEIRAS</string>
+		<key>Endereco</key>
+		<string>R. JOSÉ D CRUZ CAMARGO, 174 </string>
+		<key>Regiao</key>
+		<string>ITAIM PTA</string>
+		<key>Latitude</key>
+		<string>-23.496167</string>
+		<key>Longitude</key>
+		<string>-46.3803548</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2568-5818</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA AGUIA DE HAIA</string>
+		<key>Endereco</key>
+		<string>R. TANTAS PALAVRAS, 59</string>
+		<key>Regiao</key>
+		<string>ITAQUERA</string>
+		<key>Latitude</key>
+		<string>-23.5213811</string>
+		<key>Longitude</key>
+		<string>-46.4686365</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3756-3187</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA CIDADE LIDER</string>
+		<key>Endereco</key>
+		<string>AV. DR. FRANCISCO MUNHOZ FILHO, 379</string>
+		<key>Regiao</key>
+		<string>ITAQUERA</string>
+		<key>Latitude</key>
+		<string>-23.5539783</string>
+		<key>Longitude</key>
+		<string>-46.4651424</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2748-0035/ 2741-1563</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
 		<string>UBS/AMA JD CAMPOS</string>
 		<key>Endereco</key>
-		<string>RUA CRESCENTE, 97, SAO PAULO</string>
+		<string>RUA CRESCENTE, 97</string>
 		<key>Regiao</key>
 		<string>ITAIM PTA</string>
 		<key>Latitude</key>
@@ -20,9 +404,1193 @@
 	</dict>
 	<dict>
 		<key>Nome</key>
+		<string>UBS/AMA BONIFACIO III</string>
+		<key>Endereco</key>
+		<string>RUA SILVIO BARBINI, 40</string>
+		<key>Regiao</key>
+		<string>ITAQUERA</string>
+		<key>Latitude</key>
+		<string>-23.5408646</string>
+		<key>Longitude</key>
+		<string>-46.4395363</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2944-6086</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS / AMA PQ BOTURUSSU PROF. DR. HUMBERTO CERRUTI</string>
+		<key>Endereco</key>
+		<string>AV. OLAVO EGÍDIO DE SOUZA ARANHA, 630</string>
+		<key>Regiao</key>
+		<string>ERMELINO MATARAZZO</string>
+		<key>Latitude</key>
+		<string>-23.5028301</string>
+		<key>Longitude</key>
+		<string>-46.4939677</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2943-9991/ 2541-4685</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA - PARADA XV DE NO V E MB R O</string>
+		<key>Endereco</key>
+		<string>RUA IBIAJARA, 804</string>
+		<key>Regiao</key>
+		<string>ITAQUERA</string>
+		<key>Latitude</key>
+		<string>-23.5272416</string>
+		<key>Longitude</key>
+		<string>-46.4358862</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2286-0017</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA JD BRASILIA</string>
+		<key>Endereco</key>
+		<string>AV. OSVALDO VALE CORDEIRO, 245</string>
+		<key>Regiao</key>
+		<string>ITAQUERA</string>
+		<key>Latitude</key>
+		<string>-23.5555673</string>
+		<key>Longitude</key>
+		<string>-46.4920899</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2743-9476</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA JD STO ANDRE</string>
+		<key>Endereco</key>
+		<string>R. MIGUEL FERREIRA DE MELO, 497</string>
+		<key>Regiao</key>
+		<string>SÃO MATEUS</string>
+		<key>Latitude</key>
+		<string>-23.6326453</string>
+		<key>Longitude</key>
+		<string>-46.4427383</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2751-4339</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA CONQUISTA III</string>
+		<key>Endereco</key>
+		<string>RUA SOMOS TODOS IGUAIS, 330</string>
+		<key>Regiao</key>
+		<string>SÃO MATEUS</string>
+		<key>Latitude</key>
+		<string>-23.6081803</string>
+		<key>Longitude</key>
+		<string>-46.4502244</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2734-2079</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA FAZENDA DO CARMO</string>
+		<key>Endereco</key>
+		<string>FRANCISCO CARDOSO JUNIOR, 10</string>
+		<key>Regiao</key>
+		<string>CID. TIRADENTES</string>
+		<key>Latitude</key>
+		<string>-23.5639624</string>
+		<key>Longitude</key>
+		<string>-46.4180218</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2556-7600</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA TEXIMA</string>
+		<key>Endereco</key>
+		<string>AV. MAL.TITO, 6577</string>
+		<key>Regiao</key>
+		<string>ITAIM PTA</string>
+		<key>Latitude</key>
+		<string>-23.4898936</string>
+		<key>Longitude</key>
+		<string>-46.3858576</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2568-3354</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA J HELENA</string>
+		<key>Endereco</key>
+		<string>AV.KUMAKI AOKI, 785 </string>
+		<key>Regiao</key>
+		<string>SÃO MIGUEL PTA</string>
+		<key>Latitude</key>
+		<string>-23.47926</string>
+		<key>Longitude</key>
+		<string>-46.4196512</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2586-2971</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA CASTRO ALVES</string>
+		<key>Endereco</key>
+		<string>RUA CADERNO DE VIAGEM, 55</string>
+		<key>Regiao</key>
+		<string>CID. TIRADENTES</string>
+		<key>Latitude</key>
+		<string>-23.58017</string>
+		<key>Longitude</key>
+		<string>-46.4041796</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2558-7399</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AE/AMA GUAIANASES</string>
+		<key>Endereco</key>
+		<string>AV. PROF. OSVALDO DE OLIVEIRA , 610 </string>
+		<key>Regiao</key>
+		<string>ITAQUERA</string>
+		<key>Latitude</key>
+		<string>-23.543104</string>
+		<key>Longitude</key>
+		<string>-46.4313434</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2557-8844 / 2557-5136</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA V CARMOSINA</string>
+		<key>Endereco</key>
+		<string>RUA IPOPOCA, 61</string>
+		<key>Regiao</key>
+		<string>ITAQUERA</string>
+		<key>Latitude</key>
+		<string>-23.5496609</string>
+		<key>Longitude</key>
+		<string>-46.4482536</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2524-7796</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA J ETELVINA</string>
+		<key>Endereco</key>
+		<string>RUA MANOEL TEODORO XAVIER, 138</string>
+		<key>Regiao</key>
+		<string>GUAIANASES</string>
+		<key>Latitude</key>
+		<string>-23.5302787</string>
+		<key>Longitude</key>
+		<string>-46.4219089</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2135-17556</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA PRES JUSCELINO KUBITSCHEK</string>
+		<key>Endereco</key>
+		<string>RUA UTARO KANAI, 286</string>
+		<key>Regiao</key>
+		<string>GUAIANASES</string>
+		<key>Latitude</key>
+		<string>-23.5655875</string>
+		<key>Longitude</key>
+		<string>-46.3993088</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2555-4474</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA J NELIA</string>
+		<key>Endereco</key>
+		<string>RUA DOMINGOS DE MARTINS PACHECO, 1910</string>
+		<key>Regiao</key>
+		<string>ITAIM PTA</string>
+		<key>Latitude</key>
+		<string>-23.5105739</string>
+		<key>Longitude</key>
+		<string>-46.3839474</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2963-3802 /2569-9019</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA J DAS LARANJEIRAS</string>
+		<key>Endereco</key>
+		<string>RUA BENTO GHUELFI, 1100</string>
+		<key>Regiao</key>
+		<string>SÃO MATEUS</string>
+		<key>Latitude</key>
+		<string>-23.3966889</string>
+		<key>Longitude</key>
+		<string>-46.3235721</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>731-7252/2732-0768</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA SAO FRANCISCO II</string>
+		<key>Endereco</key>
+		<string>AV. BANDEIRA DO ARACAMBI</string>
+		<key>Regiao</key>
+		<string>SÃO MATEUS</string>
+		<key>Latitude</key>
+		<string>-23.6308412</string>
+		<key>Longitude</key>
+		<string>-46.457331</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2751-6712/2751- 0556</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA JD ROMANO</string>
+		<key>Endereco</key>
+		<string>RUA RIO MANUEL ALVES, 57</string>
+		<key>Regiao</key>
+		<string>S. MIGUEL PTA</string>
+		<key>Latitude</key>
+		<string>-23.4848849</string>
+		<key>Longitude</key>
+		<string>-46.3947747</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3678-5222</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AMA JD TRES MARIAS</string>
+		<key>Endereco</key>
+		<string>RUA BRENO ACIOLI, 440</string>
+		<key>Regiao</key>
+		<string>ERMELINO MATARAZZO</string>
+		<key>Latitude</key>
+		<string>-22.6999652</string>
+		<key>Longitude</key>
+		<string>-47.3010582</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2280-4388 / 6143-4617</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA SÍTIO DA CASA PINTADA</string>
+		<key>Endereco</key>
+		<string>AV. MARIA SANTANA, 101</string>
+		<key>Regiao</key>
+		<string>SÃO MIGUEL PTA</string>
+		<key>Latitude</key>
+		<string>-23.5111227</string>
+		<key>Longitude</key>
+		<string>-46.455963</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2053-7174 / 2054-2446</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA J TIETE I</string>
+		<key>Endereco</key>
+		<string>AV. ENGENHO NOVO, 120</string>
+		<key>Regiao</key>
+		<string>SÃO MATEUS</string>
+		<key>Latitude</key>
+		<string>-23.585025</string>
+		<key>Longitude</key>
+		<string>-46.492991</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2962-3644 / 6114-1279</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA PQ PAULISTANO</string>
+		<key>Endereco</key>
+		<string>RUA SILVEIRA PIRES, 265</string>
+		<key>Regiao</key>
+		<string>SÃO MIGUEL PTA</string>
+		<key>Latitude</key>
+		<string>-23.4873335</string>
+		<key>Longitude</key>
+		<string>-46.4320858</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3678-7309</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS /AMA JD POPULAR</string>
+		<key>Endereco</key>
+		<string>AV. JAIME TORRES, 600</string>
+		<key>Regiao</key>
+		<string>ERMELINO MATARAZZO</string>
+		<key>Latitude</key>
+		<string>-23.517972</string>
+		<key>Longitude</key>
+		<string>-46.5065273</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2685-0469</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AE/AMA TITO LOPES</string>
+		<key>Endereco</key>
+		<string>RUA PROF. ANTÔNIO GAMA DE CERQUEIRA, 347</string>
+		<key>Regiao</key>
+		<string>SÃO MIGUEL PTA</string>
+		<key>Latitude</key>
+		<string>-23.4968169</string>
+		<key>Longitude</key>
+		<string>-46.4409403</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6956-8122</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA ITAPEMA</string>
+		<key>Endereco</key>
+		<string>R. COSTEIRA, 572</string>
+		<key>Regiao</key>
+		<string>CIDADE LIDER</string>
+		<key>Latitude</key>
+		<string>-23.5602991</string>
+		<key>Longitude</key>
+		<string>-46.5099748</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6724-6146</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA CHACARA CRUZEIRO DO SUL</string>
+		<key>Endereco</key>
+		<string>R. MERCEDES LOPES, 989</string>
+		<key>Regiao</key>
+		<string>PENHA</string>
+		<key>Latitude</key>
+		<string>-23.5135542</string>
+		<key>Longitude</key>
+		<string>-46.5316849</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6642-3448</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AMA STA CRUZ</string>
+		<key>Endereco</key>
+		<string>R. PEDRO DE TOLEDO, 309</string>
+		<key>Regiao</key>
+		<string>VILA MARIANA</string>
+		<key>Latitude</key>
+		<string>-23.5984951</string>
+		<key>Longitude</key>
+		<string>-46.6397484</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5539-0862</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AMA AGUA RASA</string>
+		<key>Endereco</key>
+		<string>RUA SERRA DE JARI, 1480</string>
+		<key>Regiao</key>
+		<string>MOOCA/AR ICANDUVA</string>
+		<key>Latitude</key>
+		<string>-23.5537469</string>
+		<key>Longitude</key>
+		<string>-46.5799659</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6605-2156</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS /AMAPARI</string>
+		<key>Endereco</key>
+		<string>RUA DAS OLARIAS, 503</string>
+		<key>Regiao</key>
+		<string>MOOCA/AR ICANDUVA</string>
+		<key>Latitude</key>
+		<string>-23.5253828</string>
+		<key>Longitude</key>
+		<string>-46.6212814</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3229-8371</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS /AMAJDNORDESTE</string>
+		<key>Endereco</key>
+		<string>R. NICOLO TARTAGLIA, 45</string>
+		<key>Regiao</key>
+		<string>PENHA</string>
+		<key>Latitude</key>
+		<string>-23.5314147</string>
+		<key>Longitude</key>
+		<string>-46.4793775</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6280-6211</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA GERALDO DA SILVA FERREIRA</string>
+		<key>Endereco</key>
+		<string>AV.ENG ARMANDO DE ARRUDA PEREIRA, 2944</string>
+		<key>Regiao</key>
+		<string>JABAQUARA</string>
+		<key>Latitude</key>
+		<string>-23.6518702</string>
+		<key>Longitude</key>
+		<string>-46.6380346</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5021-5973</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA HERMENEGILDO M. JR</string>
+		<key>Endereco</key>
+		<string>RUA PLANALTO DA CONQUISTA, 80</string>
+		<key>Regiao</key>
+		<string>V. PRUDENTE/SAPOPEMBA</string>
+		<key>Latitude</key>
+		<string>-23.58833</string>
+		<key>Longitude</key>
+		<string>-46.560633</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6216-3746</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA V CALIFORNIA</string>
+		<key>Endereco</key>
+		<string>PRAÇA CONDE SÃO JANUÁRIO, 91</string>
+		<key>Regiao</key>
+		<string>V. PRUDENTE/SAPOPEMBA</string>
+		<key>Latitude</key>
+		<string>-23.6049012</string>
+		<key>Longitude</key>
+		<string>-46.5550211</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6912-9879</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA V ORATORIO</string>
+		<key>Endereco</key>
+		<string>RUA JOÃO FIALHO, 35</string>
+		<key>Regiao</key>
+		<string>MOOCA/ARICANDUVA</string>
+		<key>Latitude</key>
+		<string>-23.573725</string>
+		<key>Longitude</key>
+		<string>-46.5593099</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6911-5318</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AMA MAURICE PATE</string>
+		<key>Endereco</key>
+		<string>R.FREI GERMANO, 50</string>
+		<key>Regiao</key>
+		<string>PENHA</string>
+		<key>Latitude</key>
+		<string>-23.5264452</string>
+		<key>Longitude</key>
+		<string>-46.5516271</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6197-5802</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA V GUARANI</string>
+		<key>Endereco</key>
+		<string>R. TEREZINHA, 123 </string>
+		<key>Regiao</key>
+		<string>MOOCA/ARICANDUVA</string>
+		<key>Latitude</key>
+		<string>-23.5792832</string>
+		<key>Longitude</key>
+		<string>-46.5284564</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6107 - 2732</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AMA JD ELBA - HUMB. G. BODRA</string>
+		<key>Endereco</key>
+		<string>RUA BATISTA FERGUSIO, 1016</string>
+		<key>Regiao</key>
+		<string>V. PRUDENTE/SAPOPEMBA</string>
+		<key>Latitude</key>
+		<string>-23.6214946</string>
+		<key>Longitude</key>
+		<string>-46.5092208</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6704-8997</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS /AMA JD GR IMALDI</string>
+		<key>Endereco</key>
+		<string>RUA PEDRO DE CASTRO VELHO, 523</string>
+		<key>Regiao</key>
+		<string>V. PRUDENTE/SAPOPEMBA</string>
+		<key>Latitude</key>
+		<string>-23.5907796</string>
+		<key>Longitude</key>
+		<string>-46.5167683</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6216-8076</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA VILA ANTONIETA</string>
+		<key>Endereco</key>
+		<string>RUA CORONEL JOÃO DE OLIVEIRA MELO, 440</string>
+		<key>Regiao</key>
+		<string>ARICANDUVA</string>
+		<key>Latitude</key>
+		<string>-23.572998</string>
+		<key>Longitude</key>
+		<string>-46.515962</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6725-3997</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA VILA MORAES</string>
+		<key>Endereco</key>
+		<string>RUA GIOVANNI DI BALDUCCIO, 250</string>
+		<key>Regiao</key>
+		<string>IPIRANGA</string>
+		<key>Latitude</key>
+		<string>-23.6336748</string>
+		<key>Longitude</key>
+		<string>-46.6123246</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5073-8345</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AE/AMA SAPOPEMBA</string>
+		<key>Endereco</key>
+		<string>JOÃO LOPES DE LIMA, 1151</string>
+		<key>Regiao</key>
+		<string>V. PRUDENTE/SAPOPEMBA</string>
+		<key>Latitude</key>
+		<string>-23.6123929</string>
+		<key>Longitude</key>
+		<string>-46.4930483</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6119-8908</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AE/AMA FLAVIO GIANOTTI</string>
+		<key>Endereco</key>
+		<string>RUA XAVIER DE ALMEIDA, 210</string>
+		<key>Regiao</key>
+		<string>IPIRANGA</string>
+		<key>Latitude</key>
+		<string>-23.5877121</string>
+		<key>Longitude</key>
+		<string>-46.60858</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6162-7236</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA CUPECÊ</string>
+		<key>Endereco</key>
+		<string>AVENIDA SANTA CATARINA,1523</string>
+		<key>Regiao</key>
+		<string>JABAQUARA</string>
+		<key>Latitude</key>
+		<string>-23.648212</string>
+		<key>Longitude</key>
+		<string>-46.662399</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5564-3079</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AMA CANGAIBA</string>
+		<key>Endereco</key>
+		<string>AV. CANGAIBA, 3722</string>
+		<key>Regiao</key>
+		<string>PENHA</string>
+		<key>Latitude</key>
+		<string>-23.5052826</string>
+		<key>Longitude</key>
+		<string>-46.5209995</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6621-6523</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA VILA CARRÃO</string>
+		<key>Endereco</key>
+		<string>R. DR JACI BARBOSA, 280</string>
+		<key>Regiao</key>
+		<string>MOOCA/ARICANDUVA</string>
+		<key>Latitude</key>
+		<string>-23.552903</string>
+		<key>Longitude</key>
+		<string>-46.5248276</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6781-2059</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA AMERICANÓPOLIS</string>
+		<key>Endereco</key>
+		<string>RUA CIDADE DE SANTOS, 46</string>
+		<key>Regiao</key>
+		<string>VILA MARIANA/JABAGUARA</string>
+		<key>Latitude</key>
+		<string>-23.6639542</string>
+		<key>Longitude</key>
+		<string>-46.6452717</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5562-1476</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA VILA CALRA</string>
+		<key>Endereco</key>
+		<string>RUA ROLANDO CURTI, 701</string>
+		<key>Regiao</key>
+		<string>VILA MARIANA/JABAGUARA</string>
+		<key>Latitude</key>
+		<string>-23.6708728</string>
+		<key>Longitude</key>
+		<string>-46.6434056</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5626-9979</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA PARQUE BRISTOL</string>
+		<key>Endereco</key>
+		<string>RUA FRANÇOIS BUNEL, 194</string>
+		<key>Regiao</key>
+		<string>IPIRANGA</string>
+		<key>Latitude</key>
+		<string>-23.6492667</string>
+		<key>Longitude</key>
+		<string>-46.6102104</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2331-3089</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AE/UBS/AMA PE MANOEL DA NOBREGA</string>
+		<key>Endereco</key>
+		<string>AV. PADRE FRANCISCO DE TOLEDO, 545</string>
+		<key>Regiao</key>
+		<string>PENHA</string>
+		<key>Latitude</key>
+		<string>-23.5452656</string>
+		<key>Longitude</key>
+		<string>-46.4858835</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2741-7296</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA ENG. GOULAR T - DR. JOSÉ PIRES</string>
+		<key>Endereco</key>
+		<string>RUA AUGUSTO CORREIA LEITE, 538</string>
+		<key>Regiao</key>
+		<string>PENHA</string>
+		<key>Latitude</key>
+		<string>-23.5000448</string>
+		<key>Longitude</key>
+		<string>-46.5167559</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>2621-7402</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>PS/AMA MUN DONA MARIA ANTONIETA F DE BARROS</string>
+		<key>Endereco</key>
+		<string>R. ANTONIO FELIPE FILHO, 180</string>
+		<key>Regiao</key>
+		<string>CAPELA DO SOCORRO</string>
+		<key>Latitude</key>
+		<string>-23.7498692</string>
+		<key>Longitude</key>
+		<string>-46.6896544</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5928-0345</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA CASTRO ALVES</string>
+		<key>Endereco</key>
+		<string>RUA JOÃO PAULO BARRETO, 131</string>
+		<key>Regiao</key>
+		<string>CAPELA DO SOCORRO</string>
+		<key>Latitude</key>
+		<string>-23.7426516</string>
+		<key>Longitude</key>
+		<string>-46.6870334</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5971-2157 / 5973-8680</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA JARDIM ICARAI - QUINTANA</string>
+		<key>Endereco</key>
+		<string>R. SÃO ROQUE DO PARAGUAÇU, 190</string>
+		<key>Regiao</key>
+		<string>CAPELA DO SOCORRO</string>
+		<key>Latitude</key>
+		<string>-23.7440224</string>
+		<key>Longitude</key>
+		<string>-46.7035694</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>6724-6146</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA JD MIRNA</string>
+		<key>Endereco</key>
+		<string>RUA DOUTOR JUVENAL HUDSON FERREIRA, 13</string>
+		<key>Regiao</key>
+		<string>CAPELA DO SOCORRO</string>
+		<key>Latitude</key>
+		<string>-23.7692355</string>
+		<key>Longitude</key>
+		<string>-46.6986485</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5527-8798</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA JD PIRAJUSSARA</string>
+		<key>Endereco</key>
+		<string>AV. AMADEU DA SILVA SAMELO, 423</string>
+		<key>Regiao</key>
+		<string>CAMPO LIMPO</string>
+		<key>Latitude</key>
+		<string>-23.6316461</string>
+		<key>Longitude</key>
+		<string>-46.7661155</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5843-6257 / 5843-6128</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA PQ FERNANDA</string>
+		<key>Endereco</key>
+		<string>RUA ERNESTO SOARES FILHO, 301</string>
+		<key>Regiao</key>
+		<string>CAPÃO REDONDO</string>
+		<key>Latitude</key>
+		<string>-23.6761781</string>
+		<key>Longitude</key>
+		<string>-46.7922591</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5821-1632 / 5824-6721</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA CAPÃO REDONDO</string>
+		<key>Endereco</key>
+		<string>AV. COMENDADOR SANTANA, 774</string>
+		<key>Regiao</key>
+		<string>CAPÃO REDONDO</string>
+		<key>Latitude</key>
+		<string>-23.6737857</string>
+		<key>Longitude</key>
+		<string>-46.7735748</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5874-6109 / 5870-7308</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AE/AMA V JOANIZA - JOAO YUNES</string>
+		<key>Endereco</key>
+		<string>R. LUIS VIVES, 85</string>
+		<key>Regiao</key>
+		<string>CIDADE ADEMAR</string>
+		<key>Latitude</key>
+		<string>-23.6741311</string>
+		<key>Longitude</key>
+		<string>-46.6595723</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5622-0844 / 5620-0519</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA V MISSIONARIA</string>
+		<key>Endereco</key>
+		<string>RUA RAINHA DAS MISSÕES, 515</string>
+		<key>Regiao</key>
+		<string>CIDADE ADEMAR</string>
+		<key>Latitude</key>
+		<string>-23.6888105</string>
+		<key>Longitude</key>
+		<string>-46.6498274</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5612-2270 / 5612/4663</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA J MIRIAM - MANOEL S. DE OLIVEIRA</string>
+		<key>Endereco</key>
+		<string>AV. SANTO AFONSO, 419</string>
+		<key>Regiao</key>
+		<string>CIDADE ADEMAR</string>
+		<key>Latitude</key>
+		<string>-23.6785465</string>
+		<key>Longitude</key>
+		<string>-46.6446451</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5622-7869 / 5621-7569</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA J CAPELA</string>
+		<key>Endereco</key>
+		<string>R. BARÃO DE PAIVA MANSO,200</string>
+		<key>Regiao</key>
+		<string>M&apos; BOI MIRIM</string>
+		<key>Latitude</key>
+		<string>-23.7302222</string>
+		<key>Longitude</key>
+		<string>-46.7887168</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5517-0226 / 5899-9652</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA J SAO LUIZ</string>
+		<key>Endereco</key>
+		<string>R. LUIZ ANTONIO VERNEY, 98</string>
+		<key>Regiao</key>
+		<string>M&apos; BOI MIRIM</string>
+		<key>Latitude</key>
+		<string>-23.6593749</string>
+		<key>Longitude</key>
+		<string>-46.7432244</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5513-1153 / 5816-5536</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA PQ NOVO STO AMARO</string>
+		<key>Endereco</key>
+		<string>R. PORTA DO PRADO, 18</string>
+		<key>Regiao</key>
+		<string>M&apos; BOI MIRIM</string>
+		<key>Latitude</key>
+		<string>-23.6990232</string>
+		<key>Longitude</key>
+		<string>-46.7807898</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5831-1448 / 5833-7669</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UARS/AMA JARDIM ANGELA</string>
+		<key>Endereco</key>
+		<string>ESTRADA GUAVIRITUBA, 49</string>
+		<key>Regiao</key>
+		<string>M&apos; BOI MIRIM</string>
+		<key>Latitude</key>
+		<string>-23.6857975</string>
+		<key>Longitude</key>
+		<string>-46.7697486</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5831-5665 / 5834-0840</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA J CAMPINAS</string>
+		<key>Endereco</key>
+		<string>R. DAS PLEIADES</string>
+		<key>Regiao</key>
+		<string>PARELHEIROS</string>
+		<key>Latitude</key>
+		<string>-23.7731789</string>
+		<key>Longitude</key>
+		<string>-46.713338</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5527-2000 / 5527-5228</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA VILA PREL - ANTONIO B. DE OLIVEIRA</string>
+		<key>Endereco</key>
+		<string>RUA TEREZA MAIA PINTO, 11</string>
+		<key>Regiao</key>
+		<string>CAMPO LIMPO</string>
+		<key>Latitude</key>
+		<string>-23.64849</string>
+		<key>Longitude</key>
+		<string>-46.7539193</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5511-1630 / 5816-5563</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS /AMAPQ.DOROTÉIA</string>
+		<key>Endereco</key>
+		<string>R.DOS ANIQUIS, 3</string>
+		<key>Regiao</key>
+		<string>C . ADEMAR</string>
+		<key>Latitude</key>
+		<string>-23.6973912</string>
+		<key>Longitude</key>
+		<string>-46.6488028</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5674-0205</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AE /AMAPEDREIRA</string>
+		<key>Endereco</key>
+		<string>R.CÓRREGO AZUL, 433</string>
+		<key>Regiao</key>
+		<string>CAPELA DO SOCORRO</string>
+		<key>Latitude</key>
+		<string>-23.6964093</string>
+		<key>Longitude</key>
+		<string>-46.6603778</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5611-8656</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS /AMA FIGUEIRA GRANDE</string>
+		<key>Endereco</key>
+		<string>RUA DANIEL KLEIN, 211</string>
+		<key>Regiao</key>
+		<string>M&apos;BOI MIRIM</string>
+		<key>Latitude</key>
+		<string>-23.6792747</string>
+		<key>Longitude</key>
+		<string>-46.7490247</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5894-4788 / 5514-6609</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS / AMA JD.ALFREDO</string>
+		<key>Endereco</key>
+		<string>R.DINAR, 51</string>
+		<key>Regiao</key>
+		<string>M&apos;BOI MIRIM</string>
+		<key>Latitude</key>
+		<string>-23.6813102</string>
+		<key>Longitude</key>
+		<string>-46.7385534</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5514-6355</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS / AMA PQ.S ANTO ANTONIO</string>
+		<key>Endereco</key>
+		<string>R.MANUEL BORDALO PINHEIRO, 100</string>
+		<key>Regiao</key>
+		<string>M&apos;BOI MIRIM</string>
+		<key>Latitude</key>
+		<string>-23.6579603</string>
+		<key>Longitude</key>
+		<string>-46.7562516</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>5511-4249</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA PAULO VI</string>
+		<key>Endereco</key>
+		<string>AV. VATICANO, 69</string>
+		<key>Regiao</key>
+		<string>BUTANTÃ</string>
+		<key>Latitude</key>
+		<string>-23.5778411</string>
+		<key>Longitude</key>
+		<string>-46.680785</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3782-8595</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA VILA PIAUI</string>
+		<key>Endereco</key>
+		<string>PÇA CAMILO CASTELO BRANCO, 10</string>
+		<key>Regiao</key>
+		<string>LAPA /PINHEIROS</string>
+		<key>Latitude</key>
+		<string>-23.500763</string>
+		<key>Longitude</key>
+		<string>-46.7569968</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3621-9840</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AE/AMA PERI PERI</string>
+		<key>Endereco</key>
+		<string>RUA JOÃO GUERRA, 247</string>
+		<key>Regiao</key>
+		<string>BUTANTÃ</string>
+		<key>Latitude</key>
+		<string>-23.5863252</string>
+		<key>Longitude</key>
+		<string>-46.7323941</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3744-3082</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
 		<string>UBS/AMA JD SÃO JORGE</string>
 		<key>Endereco</key>
-		<string>RUA ÂNGELO APARECIDO SANTOS DIAS, 331, SAO PAULO</string>
+		<string>RUA ÂNGELO APARECIDO SANTOS DIAS, 331</string>
 		<key>Regiao</key>
 		<string>BUTANTÃ</string>
 		<key>Latitude</key>
@@ -36,9 +1604,57 @@
 	</dict>
 	<dict>
 		<key>Nome</key>
+		<string>AMA BORACEA</string>
+		<key>Endereco</key>
+		<string>RUA DR. RIBEIRO DE ALMEIDA, 14</string>
+		<key>Regiao</key>
+		<string>SÉ</string>
+		<key>Latitude</key>
+		<string>-23.5249369</string>
+		<key>Longitude</key>
+		<string>-46.6516522</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3392-1944 / 3392-1854</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS / AMA VILA SONIA</string>
+		<key>Endereco</key>
+		<string>R. ABRAHÃO CALIL REZEK, 91</string>
+		<key>Regiao</key>
+		<string>BUTANTÃ</string>
+		<key>Latitude</key>
+		<string>-23.5979759</string>
+		<key>Longitude</key>
+		<string>-46.7348195</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3744-2982</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA V NOVA JAGUARE</string>
+		<key>Endereco</key>
+		<string>RUA SATALIEL DE CAMPOS, 222</string>
+		<key>Regiao</key>
+		<string>JAGUARE</string>
+		<key>Latitude</key>
+		<string>-23.5432219</string>
+		<key>Longitude</key>
+		<string>-46.7443664</string>
+		<key>is24hrs</key>
+		<string>07:00 - 19:00</string>
+		<key>Telefone</key>
+		<string>3766-3160</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
 		<string>HOSP. DR.JOSÉ SOARES HUNGRIA</string>
 		<key>Endereco</key>
-		<string>AV. MENOTTI LAUDISIO, 100, SAO PAULO</string>
+		<string>AV. MENOTTI LAUDISIO, 100</string>
 		<key>Regiao</key>
 		<string>PIRITUBA</string>
 		<key>Latitude</key>
@@ -46,9 +1662,169 @@
 		<key>Longitude</key>
 		<string>-46.7286459</string>
 		<key>is24hrs</key>
-		<string>24hrs</string>
+		<string>24 hrs</string>
 		<key>Telefone</key>
 		<string>3974-7000</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AMA WALDOMIRO DE PAULA</string>
+		<key>Endereco</key>
+		<string>RUA AUGUSTO CARLOS BAUMANN, 1074</string>
+		<key>Regiao</key>
+		<string>ITAQUERA</string>
+		<key>Latitude</key>
+		<string>-23.530821</string>
+		<key>Longitude</key>
+		<string>-46.444359</string>
+		<key>is24hrs</key>
+		<string>24 hrs</string>
+		<key>Telefone</key>
+		<string>2286-0086/ 2944-6355</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>HM ERM. MATARAZZO - ALIPIO C. PINTO</string>
+		<key>Endereco</key>
+		<string>AL. RODRIGO DE BRUM, 36</string>
+		<key>Regiao</key>
+		<string>ERMELINO MATARAZZO</string>
+		<key>Latitude</key>
+		<string>-23.5005118</string>
+		<key>Longitude</key>
+		<string>-46.4729824</string>
+		<key>is24hrs</key>
+		<string>24 hrs</string>
+		<key>Telefone</key>
+		<string>2943-9944</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>UBS/AMA SACOMA</string>
+		<key>Endereco</key>
+		<string>ESTRADA DAS LÁGRIMAS, 1403</string>
+		<key>Regiao</key>
+		<string>IPIRANGA /SACOMÃ</string>
+		<key>Latitude</key>
+		<string>-23.6136205</string>
+		<key>Longitude</key>
+		<string>-46.5941477</string>
+		<key>is24hrs</key>
+		<string>24 hrs</string>
+		<key>Telefone</key>
+		<string>2068-6816/ 2591-2016</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>HOSP MUN VL. NHOCUNE ALE XANDR E ZAIO</string>
+		<key>Endereco</key>
+		<string> RUA ALVES MALDONADO, 128</string>
+		<key>Regiao</key>
+		<string>PENHA</string>
+		<key>Latitude</key>
+		<string>-23.543047</string>
+		<key>Longitude</key>
+		<string>-46.5023972</string>
+		<key>is24hrs</key>
+		<string>24 hrs</string>
+		<key>Telefone</key>
+		<string>2749-2855 / RAMAL 134</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>HOSPITAL MUN. SABOYA</string>
+		<key>Endereco</key>
+		<string>AV. FRANCISCO DE PAULA QUINTANILHA RIBEIRO, 860 </string>
+		<key>Regiao</key>
+		<string>JABAQUARA</string>
+		<key>Latitude</key>
+		<string>-23.6535047</string>
+		<key>Longitude</key>
+		<string>-46.6449081</string>
+		<key>is24hrs</key>
+		<string>24 hrs</string>
+		<key>Telefone</key>
+		<string>5013-5462 / 5013-5461</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>HM TATUAPE CARMINO CARICCHIO</string>
+		<key>Endereco</key>
+		<string>RUA SIRIA, 95</string>
+		<key>Regiao</key>
+		<string>MOOCA/ARICANDUVA</string>
+		<key>Latitude</key>
+		<string>-23.5325864</string>
+		<key>Longitude</key>
+		<string>-46.5660461</string>
+		<key>is24hrs</key>
+		<string>24 hrs</string>
+		<key>Telefone</key>
+		<string>2091-7000</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>HOSP. IGNACIO PROENÇA DE GOUVEIA</string>
+		<key>Endereco</key>
+		<string>RUA VITO ANTÔNIO DEL VECCHIO, 151</string>
+		<key>Regiao</key>
+		<string>MOOCA/ARICANDUVA</string>
+		<key>Latitude</key>
+		<string>-23.5716382</string>
+		<key>Longitude</key>
+		<string>-46.5902493</string>
+		<key>is24hrs</key>
+		<string>24 hrs</string>
+		<key>Telefone</key>
+		<string>2068-6700/ RAMAL 243</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>PA/UBS/AMA PARELHEIROS</string>
+		<key>Endereco</key>
+		<string>R. MARIO TRAPPE, 100</string>
+		<key>Regiao</key>
+		<string>PARELHEIROS</string>
+		<key>Latitude</key>
+		<string>-23.8307906</string>
+		<key>Longitude</key>
+		<string>-46.7182161</string>
+		<key>is24hrs</key>
+		<string>24 hrs</string>
+		<key>Telefone</key>
+		<string>5920-8860 / 5921-4946</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>HOSP MUN CAMPO LIMPO- FERNANDO M. P. DA ROCHA</string>
+		<key>Endereco</key>
+		<string>RUA TEREZA MOOCO DE OLIVEIRA </string>
+		<key>Regiao</key>
+		<string>CAMPO LIMPO</string>
+		<key>Latitude</key>
+		<string>-23.650725</string>
+		<key>Longitude</key>
+		<string>-46.7486424</string>
+		<key>is24hrs</key>
+		<string>24 hrs</string>
+		<key>Telefone</key>
+		<string>5512-4537</string>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>AMA FREDERICO ALVARENGA - SÉ</string>
+		<key>Endereco</key>
+		<string>R. FREDERICO ALVARENGA, 259</string>
+		<key>Regiao</key>
+		<string>SÉ</string>
+		<key>Latitude</key>
+		<string>-23.551214</string>
+		<key>Longitude</key>
+		<string>-46.628355</string>
+		<key>is24hrs</key>
+		<string>24 hrs</string>
+		<key>Telefone</key>
+		<string>3101-8841 / 3101-8833</string>
 	</dict>
 </array>
 </plist>

@@ -17,12 +17,8 @@
     AMA *ama,*ama2, *itemSelecionado;
     CLLocationManager *coordenadaSelecionada;
     ListaAMA *listaAma;
-    CLLocationCoordinate2D loc,lat;
+    CLLocationCoordinate2D loc;
     NSArray *locali;
-    
-    //CLLocationManager *locationManager;
-    
-    
 }
 
 @end
@@ -33,90 +29,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //locationManager = [[CLLocationManager alloc]init];
+
     //Inicializando as variaveis
     ama = [[AMA alloc]init];
     listaAma = [[ListaAMA alloc]init];
-    //loc = [[CLLocationCoordinate2D alloc]init];
-    
-    
+
     //Pega instancia
     _locationManager = [[CLLocationManager alloc] init];
-    
-    
     //Define precisão do GPS
     [_locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
-    
-    
     //Define que o delegate sera esta clase
     [_locationManager setDelegate: self];
     if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
         [self.locationManager requestWhenInUseAuthorization];
     }
-    
     //Começa monitorar localização
     [_locationManager startUpdatingLocation];
     
-    
-    
-    lat = [_locationManager location].coordinate;
     loc = [_locationManager location].coordinate;
     
-    for (int a; a<[listaAma.AllAMA count]; a++) {
-        
-        double valor = [self DistanceBetweenCoordinate:lat andCoordinate: [ama.latitude doubleValue] andLong:[ama.longitude doubleValue]];
-        NSLog(@"Valor = %f",valor);
-        
-        
-    }
-    
-    
-    
-    
-    
 }
 
 
--(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-    //NSLog(@"%@",error.localizedDescription);
-    
-    NSLog(@"didFailWithError: %@", error);
-    UIAlertView *errorAlert = [[UIAlertView alloc]
-                               initWithTitle:@"Erro" message:@"Falha em localizar sua localização" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [errorAlert show];
-    
-}
-
-
-
-
-
+//Pega a posicao do usuario
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
-    //NSLog(@"So Aki");
-    //NSLog(@"AKIII%@", [locations lastObject]);
+
     _armazenar = [locations lastObject];
-    //NSLog(@"EITA%@",[self.locationManager.location].coordinate]);
-    
-    //[self.locationManager.location];
-    //[self.locationManager.location.coordinate];
-    
     [_locationManager stopUpdatingLocation];
-    
-    
-    // NSLog(@"didUpdateToLocation: %@", newLocation);
     CLLocation *currentLocation = _armazenar;
-    
-    
-    
+
     if (currentLocation != nil) {
-        
-        
-        
-        //  latiduteUM = [currentLocation.coordinate.latitude];
-        // longitudeUM = [currentLocation.coordinate.longitude];
-        
-        
         _longitudeUM  = [NSString stringWithFormat:@"%.8f",currentLocation.coordinate.longitude];
         
         _latiduteUM  = [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.latitude];
@@ -125,57 +68,24 @@
     
 }
 
--(CLLocationDistance) DistanceBetweenCoordinate:(CLLocationCoordinate2D)origenCoordinete andCoordinate:(double )LatDestion andLong:(double)LongDestion
-{
-    CLLocation *originlocation = [[CLLocation alloc]initWithLatitude:origenCoordinete.latitude longitude:origenCoordinete.longitude];
-    
-    CLLocation *destination = [[CLLocation alloc]initWithLatitude:LatDestion longitude:LongDestion];
-    
-    CLLocationDistance distance = [originlocation distanceFromLocation:destination];
-    
-    return distance;
-    
-}
-
-
-
-
-
-//-(double)CalculoDistancia :(double)LatitudeUm :(double)LatitudeDois :(double)LongitudeUm :(double)LongitudeDois
-//{
-//
-//    double distancia;
-//    double Pi = 3.1415926536;
-//
-//    distancia = ((acos(cos((90 - LatitudeUm)* Pi/180)*cos((90 - LatitudeDois) * Pi/180)+ sin((90 - LatitudeUm)* Pi/180)*sin((90 - LatitudeDois)* Pi/180) * cos(ABS(((360 + LongitudeUm)* Pi/180) - ((360 + LongitudeDois)* Pi/180)))))*6371.004) * 1000;
-//
-//    return distancia;
-//
-//}
 
 
 #pragma mark - Table view data source
 
+//Configuracoes da Table View
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
-    // Return the number of sections.
+
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    // Return the number of rows in the section.
+
     return [listaAma.AllAMA count];
 }
 
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    itemSelecionado = [listaAma.AllAMA objectAtIndex:[indexPath row]];
-    loc = lat;
-    
-    [self performSegueWithIdentifier:@"showMapSegue" sender:tableView];
-}
+//Preenchimento da tabela
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -199,15 +109,6 @@
     cell.HRegiao.text = currentAma.regiao;
     //cell.HHorario.text = currentAma.is24hrs;
     cell.HHorario.text = [NSString stringWithFormat:@"%f", currentAma.distancia];
-    
-    NSLog(@"%@", cell.HHorario.text);
-    
-    //
-    
-    
-    
-    
-    
     return cell;
 }
 
@@ -227,7 +128,7 @@
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        
     }
 }
 
@@ -240,8 +141,6 @@
     
     long row2 = [toIndexPath row];
     
-    
-    
     id temp = [listaAma.AllAMA objectAtIndex:row1];
     
     [listaAma.AllAMA removeObjectAtIndex:row1];
@@ -249,6 +148,15 @@
     [listaAma.AllAMA insertObject:temp atIndex:(row2)];
     
     
+}
+
+//Configurações para passar os dados para a proxima view
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    itemSelecionado = [listaAma.AllAMA objectAtIndex:[indexPath row]];
+    
+    [self performSegueWithIdentifier:@"showMapSegue" sender:tableView];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -267,14 +175,28 @@
     return YES;
 }
 
+//Calculo para determinar a distancia entre o usuario e um Hospital
 
+-(CLLocationDistance) DistanceBetweenCoordinate:(CLLocationCoordinate2D)origenCoordinete andCoordinate:(double )LatDestion andLong:(double)LongDestion
+{
+    CLLocation *originlocation = [[CLLocation alloc]initWithLatitude:origenCoordinete.latitude longitude:origenCoordinete.longitude];
+    
+    CLLocation *destination = [[CLLocation alloc]initWithLatitude:LatDestion longitude:LongDestion];
+    
+    CLLocationDistance distance = [originlocation distanceFromLocation:destination];
+    
+    return distance;
+    
+}
+
+//Ordenando o vetor
 -(void)sortAllAma{
     for (int i = 0; i < [listaAma.AllAMA count]; i++) {
         AMA *currentAma = listaAma.AllAMA[i];
         
         
         
-        CLLocationDistance auxDistance = [self DistanceBetweenCoordinate:lat andCoordinate: [currentAma.latitude doubleValue] andLong:[currentAma.longitude doubleValue]];
+        CLLocationDistance auxDistance = [self DistanceBetweenCoordinate:loc andCoordinate: [currentAma.latitude doubleValue] andLong:[currentAma.longitude doubleValue]];
         
         [currentAma setDistancia:auxDistance];
         [listaAma.AllAMA replaceObjectAtIndex:i withObject:currentAma];

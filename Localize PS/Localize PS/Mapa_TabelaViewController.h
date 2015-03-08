@@ -13,8 +13,14 @@
 #import "PointMarker.h"
 #import "AMA.h"
 
-@interface Mapa_TabelaViewController : UIViewController
+@interface Mapa_TabelaViewController : UIViewController<CLLocationManagerDelegate, MKMapViewDelegate>
+{
+     MKRoute *rota;
+    bool searching;
+    CLLocationCoordinate2D loc;
+}
 
+@property (weak, nonatomic) IBOutlet MKMapView *MapView;
 @property AMA *itemSelecionado;
 @property bool searching;
 @property int AtualizarPosicao;
@@ -25,5 +31,7 @@
 @property CLLocationManager *locationManager;
 - (IBAction)BAtualizar:(id)sender;
 + (instancetype)sharedInstance;
+@property (weak, nonatomic) IBOutlet UILabel *LTempo;
+@property (weak, nonatomic) IBOutlet UIButton *batualiza;
 
 @end

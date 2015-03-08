@@ -71,12 +71,12 @@
     if(_AtualizarPosicao==0)
     {
         // [_Mapa removeAnnotations:[_Mapa annotations]];
-        [_MapaT setRegion:region animated:YES ];
+        [_MapView setRegion:region animated:YES ];
         
         
         [pm setCoordinate:CLLocationCoordinate2DMake(loc.latitude, loc.longitude)];
         pm.title = [NSString stringWithFormat:@"Posicao Atual"];
-        [_MapaT addAnnotation:pm];
+        [_MapView addAnnotation:pm];
         _AtualizarPosicao=1;
     }
 }
@@ -96,6 +96,6 @@
 }
 */
 
-
+//----------------------------------------------------
 
 @end

@@ -16,7 +16,7 @@
 @interface ListaPSTableViewController : UITableViewController<CLLocationManagerDelegate>
 
 @property CLLocationManager *locationManager;
-@property CLLocationManager *armazenar;
+@property CLLocation *armazenar;
 @property NSString * latiduteUM;
 @property NSString *longitudeUM;
 

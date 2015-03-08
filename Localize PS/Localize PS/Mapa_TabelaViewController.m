@@ -14,6 +14,7 @@
 
 @implementation Mapa_TabelaViewController
 
+//singleton
 + (instancetype)sharedInstance {
     static dispatch_once_t onceToken = 0;
     __strong static Mapa_TabelaViewController *instance = nil;
@@ -25,20 +26,15 @@
 
 -(void)viewDidLoad{
     
+    //Inicializa o _locationManager, para pegar as posiçoes
 
     searching = NO;
   
     [self.MapView setDelegate:self];
     
-    //Pega instancia
+    
     _locationManager = [[CLLocationManager alloc] init];
-    
-    
-    //Define precisão do GPS
     [_locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
-    
-    
-    //Define que o delegate sera esta clase
     [_locationManager setDelegate: self];
     
     if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
@@ -47,15 +43,14 @@
     
     //Começa monitorar localização
     [_locationManager startUpdatingLocation];
-   
-
     
-    
-    //chama a funcao calculoDistancia mandando a localização atual
+    //Salva a posicao do usuario
     loc = [[_locationManager location]coordinate];
 
-    
     [super viewDidLoad];
+    
+    
+    //Traca a rota logo quando a tela é aberta
     
     MKPlacemark *source = [[MKPlacemark alloc]initWithCoordinate:CLLocationCoordinate2DMake(loc.latitude, loc.longitude) addressDictionary:[NSDictionary dictionaryWithObjectsAndKeys:@"",@"", nil] ];
     MKMapItem *srcMapItem = [[MKMapItem alloc]initWithPlacemark:source];
@@ -71,6 +66,15 @@
     
 }
 
+-(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    //NSLog(@"%@",error.localizedDescription);
+    
+    NSLog(@"didFailWithError: %@", error);
+    UIAlertView *errorAlert = [[UIAlertView alloc]
+                               initWithTitle:@"Erro" message:@"Falha em localizar sua localização" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [errorAlert show];
+    
+}
 
 - (void)viewDidDisappear:(BOOL)animated{
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
@@ -83,7 +87,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+//Adiciona anotaçoes no hospital
 -(void)NearestPS {
     
     CLLocationCoordinate2D crd = CLLocationCoordinate2DMake([self.itemSelecionado.latitude doubleValue], [self.itemSelecionado.longitude doubleValue]);
@@ -96,6 +100,7 @@
     
 }
 
+//Funcao complementar para traçar a rota
 -(void)traceRoute:(MKMapItem *) source to: (MKMapItem *) destination {
     [_MapView removeOverlay:rota.polyline];
     
@@ -124,6 +129,8 @@
         NSString *tempo = [NSString stringWithFormat:@"Tempo: %ld min",(long)t];
         NSLog(@"tempo %@", tempo);
         [_LTempo setText:tempo];
+        [_labelteste setText:self.itemSelecionado.endereco];
+        
     }];
     
 }
@@ -153,15 +160,11 @@
 }
 
 
-/*
- * Botão para atualizar achar Posição atual no mapa
- *  - Ao clicar ele mesmo se esconde
- *
- */
+// Botão para atualizar achar Posição atual no mapa
+
 - (IBAction)BAtualizar:(id)sender {
     [_locationManager startUpdatingLocation];
     [self NearestPS];
-    [_batualiza setHidden:YES];
     
 }
 
@@ -176,14 +179,8 @@
     }
 }
 
-/*
- *  Calcula as distancias de todos os Prontos Socorros
- * setando a distância em cada um.
- *  Todos os prontos socorros estão guardados em um
- * objeto do tipo ListaAMA e são ordenados de acordo
- *  com a distancia, oque tive a distância mais próxima
- *  da posição atual ficara na posicão 0 do vetor.
- */
+
+//Vai para a posicao em que o hospital se encontra
 -(IBAction)BLocHosp:(id)sender {
 
     [self NearestPS];
@@ -195,10 +192,12 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
-    
+    //Muda o texto da Annotation de localizacao do usuario
     if ([annotation isKindOfClass:[MKUserLocation class]]) {
-        return nil;
+         ((MKUserLocation *)annotation).title = @"Posição Atual";
     }
+    
+   
     if ([annotation isKindOfClass:[PointMarker class]]) // use whatever annotation class you used when creating the annotation
     {
         static NSString * const identifier = @"MyCustomAnnotation";

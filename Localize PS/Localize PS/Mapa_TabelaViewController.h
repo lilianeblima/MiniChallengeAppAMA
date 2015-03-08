@@ -26,7 +26,6 @@
 @property int AtualizarPosicao;
 @property CLLocationCoordinate2D *loc;
 @property (weak, nonatomic) IBOutlet UILabel *labelteste;
-@property (weak, nonatomic) IBOutlet MKMapView *MapaT;
 @property MKPointAnnotation *pointMarker;
 @property CLLocationManager *locationManager;
 - (IBAction)BAtualizar:(id)sender;

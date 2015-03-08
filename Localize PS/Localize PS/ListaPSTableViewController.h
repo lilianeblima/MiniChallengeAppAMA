@@ -14,11 +14,17 @@
 #import "PSTableViewCell.h"
 
 @interface ListaPSTableViewController : UITableViewController<CLLocationManagerDelegate>
+{
+    AMA *ama,*ama2, *itemSelecionado;
+    CLLocationManager *coordenadaSelecionada;
+    ListaAMA *listaAma;
+    CLLocationCoordinate2D loc;
+    NSArray *locali;
+}
 
 @property CLLocationManager *locationManager;
-@property CLLocation *armazenar;
-@property NSString * latiduteUM;
-@property NSString *longitudeUM;
+
+
 
 
 

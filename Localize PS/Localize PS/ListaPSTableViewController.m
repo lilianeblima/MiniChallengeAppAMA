@@ -13,13 +13,7 @@
 
 
 @interface ListaPSTableViewController ()
-{
-    AMA *ama,*ama2, *itemSelecionado;
-    CLLocationManager *coordenadaSelecionada;
-    ListaAMA *listaAma;
-    CLLocationCoordinate2D loc;
-    NSArray *locali;
-}
+
 
 @end
 
@@ -46,25 +40,8 @@
     //Começa monitorar localização
     [_locationManager startUpdatingLocation];
     
+    //Salva as coordenadas do cliente na variavel loc
     loc = [_locationManager location].coordinate;
-    
-}
-
-
-//Pega a posicao do usuario
--(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-{
-
-    _armazenar = [locations lastObject];
-    [_locationManager stopUpdatingLocation];
-    CLLocation *currentLocation = _armazenar;
-
-    if (currentLocation != nil) {
-        _longitudeUM  = [NSString stringWithFormat:@"%.8f",currentLocation.coordinate.longitude];
-        
-        _latiduteUM  = [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.latitude];
-        
-    }
     
 }
 
@@ -99,16 +76,12 @@
     {
         cell = [[PSTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"PSTableCell"];
     }
-    
-    
-    
-    
+
     cell.HNome.text = currentAma.nome;
     cell.HTelefone.text = currentAma.telefone;
     cell.HEndereco.text = currentAma.endereco;
     cell.HRegiao.text = currentAma.regiao;
-    //cell.HHorario.text = currentAma.is24hrs;
-    cell.HHorario.text = [NSString stringWithFormat:@"%f", currentAma.distancia];
+    cell.HHorario.text = currentAma.is24hrs;
     return cell;
 }
 

@@ -37,19 +37,6 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    if ([segue.identifier isEqualToString:@"showSearchViewSegue"]) {
-        
-        MapaViewController *MapaView = segue.destinationViewController;
-        UIButton *btn = sender;
-        
-        if (![btn.titleLabel.text isEqual: @""]) {
-            MapaView.searchQuery = (NSMutableArray*) query;
-        }
-        
-    }
-}
 
 #pragma mark Category button actions
 

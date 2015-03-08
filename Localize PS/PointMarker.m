@@ -13,13 +13,14 @@
 
 @synthesize coordinate, title;
 
--(id)initWithCoordinate:(CLLocationCoordinate2D) coord title: (NSString *) t Subtitle:(NSString *)subTitle {
+-(id)initWithCoordinate:(CLLocationCoordinate2D) coord title: (NSString *) t Subtitle:(NSString *)subTitle Distance:(float)distancia  {
     self = [super init];
     
     if(self){
         coordinate = coord;
         [self setTitle:t];
         [self setSubtitle:subTitle];
+        [self setDistance:distancia];
         
     }
     

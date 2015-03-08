@@ -65,8 +65,8 @@
 		21A977171AA72B5900ED4823 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		21A977191AA72C3C00ED4823 /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
 		21A9771A1AA72C3C00ED4823 /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
-		21A9771C1AA72E4F00ED4823 /* ListaPSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaPSTableViewController.h; sourceTree = "<group>"; };
-		21A9771D1AA72E4F00ED4823 /* ListaPSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaPSTableViewController.m; sourceTree = "<group>"; };
+		21A9771C1AA72E4F00ED4823 /* ListaPSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListaPSTableViewController.h; path = "Localize PS/ListaPSTableViewController.h"; sourceTree = "<group>"; };
+		21A9771D1AA72E4F00ED4823 /* ListaPSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListaPSTableViewController.m; path = "Localize PS/ListaPSTableViewController.m"; sourceTree = "<group>"; };
 		21A9771F1AA72EEA00ED4823 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		21A977211AA72EF400ED4823 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		21A977231AA72EFB00ED4823 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -183,8 +183,6 @@
 			children = (
 				21A9771A1AA72C3C00ED4823 /* MapaViewController.m */,
 				21A977191AA72C3C00ED4823 /* MapaViewController.h */,
-				21A9771D1AA72E4F00ED4823 /* ListaPSTableViewController.m */,
-				21A9771C1AA72E4F00ED4823 /* ListaPSTableViewController.h */,
 				11F0EFDC1AAA3DE5006E5752 /* Mapa_TabelaViewController.h */,
 				11F0EFDD1AAA3DE5006E5752 /* Mapa_TabelaViewController.m */,
 				11526E261AA728BC00BFE981 /* ViewController.m */,
@@ -212,6 +210,8 @@
 		21ABF5CD1AA8A81500BD36C9 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				21A9771D1AA72E4F00ED4823 /* ListaPSTableViewController.m */,
+				21A9771C1AA72E4F00ED4823 /* ListaPSTableViewController.h */,
 				11668F491AA78B5E0013918C /* PSTableViewCell.h */,
 				11668F4A1AA78B5E0013918C /* PSTableViewCell.m */,
 			);

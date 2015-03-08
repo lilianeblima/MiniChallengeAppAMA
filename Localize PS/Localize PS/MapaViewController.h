@@ -21,8 +21,10 @@
     bool searching;
     CLPlacemark *thePlacemark;
     ListaAMA *amas;
-    AMA *auxiliar;
-    ListaAMA *amasAuxiliar;
+    AMA *amaMaisProxima;
+    CLLocationCoordinate2D loc;
+    MKRoute *rota;
+
 }
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
@@ -31,27 +33,28 @@
 - (IBAction)mostraRota:(id)sender;
 - (IBAction)localizacaoAtual:(id)sender;
 - (IBAction)atualizarPS:(id)sender;
-
 @property (weak, nonatomic) IBOutlet UIButton *atualizarPS;
+
 @property (weak, nonatomic) IBOutlet UIVisualEffectView *blurViewOutlet;
 
 
 @property MKPointAnnotation *pointMarker;
 
-@property NSMutableArray *searchQuery;
-@property PointMarker *routeDestination;
-
-@property (weak, nonatomic) IBOutlet UIButton *voltarNav;
-
 @property (weak, nonatomic) IBOutlet UILabel *nomeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *telefoneLabel;
 @property (weak, nonatomic) IBOutlet UILabel *distanciaLabel;
+@property (weak, nonatomic) IBOutlet UILabel *endereco;
 
 + (instancetype)sharedInstance;
-- (IBAction)voltarNav:(id)sender;
-- (void)searchLocations: (MKCoordinateRegion)region;
 
 - (IBAction)rotaBotao:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *rotaBotao;
+@property (weak, nonatomic) IBOutlet UILabel *rota;
+- (IBAction)cancelarRota:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *cancelarRota;
+- (IBAction)mostrarPS:(id)sender;
+
+-(void) calculoDistancia: (CLLocationCoordinate2D)loc;
 
 
 @end

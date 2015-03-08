@@ -108,7 +108,6 @@
         auxiliar = [AllAMA objectAtIndex:i];
         printf("\ntitulo: %s", [auxiliar.nome UTF8String]);
         printf("distancia: %f\n", auxiliar.distanciaMapa);
-        
     }
 }
 

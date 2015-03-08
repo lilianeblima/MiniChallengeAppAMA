@@ -134,7 +134,7 @@
                                     <segue destination="0KM-8A-kgS" kind="show" identifier="showSearchViewSegue" id="HES-Gh-6se"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LISTA DE PRONTOS-SOCORROS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QB3-9u-MB8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LISTA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QB3-9u-MB8">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="hjO-Jd-ASf"/>
@@ -202,7 +202,7 @@
                                     <segue destination="vw2-c6-GN9" kind="show" id="2pb-Dj-XWq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOCALIZAR PRONTO-SOCORRO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZK8-yo-PZR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRONTO-SOCORRO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZK8-yo-PZR">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="8qS-qR-FPm"/>
@@ -251,7 +251,9 @@
                             <constraint firstItem="qX5-Tn-Z9O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="54" id="HAZ-wI-TiC"/>
                             <constraint firstItem="JOa-KX-AoN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="HsC-QL-VsF"/>
                             <constraint firstItem="JOa-KX-AoN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="38" id="Hvc-Ip-tmN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fWu-tj-nim" secondAttribute="trailing" constant="47" id="KBV-3V-Bbm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fWu-tj-nim" secondAttribute="trailing" constant="47" id="KBV-3V-Bbm">
+                                <variation key="widthClass=compact" constant="39"/>
+                            </constraint>
                             <constraint firstItem="JOa-KX-AoN" firstAttribute="top" secondItem="fWu-tj-nim" secondAttribute="bottom" constant="78" id="LJ5-t4-JTd"/>
                             <constraint firstItem="JOa-KX-AoN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="283" id="NZu-ZR-yoD"/>
                             <constraint firstItem="qX5-Tn-Z9O" firstAttribute="top" secondItem="JOa-KX-AoN" secondAttribute="bottom" constant="27" id="OAb-3f-Id2"/>
@@ -260,7 +262,9 @@
                             <constraint firstItem="JOa-KX-AoN" firstAttribute="top" secondItem="fWu-tj-nim" secondAttribute="bottom" constant="116" id="S7z-Ez-A30"/>
                             <constraint firstItem="JOa-KX-AoN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="SoQ-R8-nj9"/>
                             <constraint firstItem="fWu-tj-nim" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="TUN-Pz-xJn"/>
-                            <constraint firstItem="fWu-tj-nim" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="UiN-6R-25V"/>
+                            <constraint firstItem="fWu-tj-nim" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="UiN-6R-25V">
+                                <variation key="widthClass=compact" constant="39"/>
+                            </constraint>
                             <constraint firstItem="fWu-tj-nim" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="VWo-0i-lh6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fWu-tj-nim" secondAttribute="trailing" constant="64" id="WM2-BP-Ib1"/>
                             <constraint firstItem="qX5-Tn-Z9O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="WYM-td-Ycs"/>

@@ -531,7 +531,7 @@
                                     <action selector="BAtualizar:" destination="ht5-9e-mtW" eventType="touchUpInside" id="ARW-Rx-0py"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dWw-11-ZOm">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dWw-11-ZOm">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCd-gj-8hj">
@@ -590,6 +590,13 @@
                                 <exclude reference="sXG-IM-WID"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="8bh-jH-hGc"/>
+                                <exclude reference="l04-OR-Ef9"/>
+                                <exclude reference="AAc-Tp-XxV"/>
+                                <exclude reference="tly-mu-PGJ"/>
+                                <exclude reference="vGq-5d-cRY"/>
+                                <exclude reference="5wT-4I-o22"/>
+                                <exclude reference="ecH-BK-lO4"/>
                                 <exclude reference="B5p-dM-tHL"/>
                                 <exclude reference="fav-sD-Hzc"/>
                                 <exclude reference="k5L-OQ-Q1j"/>
@@ -597,13 +604,6 @@
                                 <exclude reference="m43-ij-htA"/>
                                 <exclude reference="qpl-Az-SaX"/>
                                 <exclude reference="x4l-bW-ebG"/>
-                                <exclude reference="AAc-Tp-XxV"/>
-                                <exclude reference="tly-mu-PGJ"/>
-                                <exclude reference="vGq-5d-cRY"/>
-                                <exclude reference="5wT-4I-o22"/>
-                                <exclude reference="ecH-BK-lO4"/>
-                                <exclude reference="8bh-jH-hGc"/>
-                                <exclude reference="l04-OR-Ef9"/>
                                 <exclude reference="OfE-RD-qGz"/>
                             </mask>
                         </variation>
@@ -615,6 +615,13 @@
                                 <include reference="sXG-IM-WID"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="8bh-jH-hGc"/>
+                                <include reference="l04-OR-Ef9"/>
+                                <include reference="AAc-Tp-XxV"/>
+                                <include reference="tly-mu-PGJ"/>
+                                <include reference="vGq-5d-cRY"/>
+                                <include reference="5wT-4I-o22"/>
+                                <include reference="ecH-BK-lO4"/>
                                 <include reference="B5p-dM-tHL"/>
                                 <include reference="fav-sD-Hzc"/>
                                 <include reference="k5L-OQ-Q1j"/>
@@ -623,13 +630,6 @@
                                 <include reference="m43-ij-htA"/>
                                 <include reference="qpl-Az-SaX"/>
                                 <include reference="x4l-bW-ebG"/>
-                                <include reference="AAc-Tp-XxV"/>
-                                <include reference="tly-mu-PGJ"/>
-                                <include reference="vGq-5d-cRY"/>
-                                <include reference="5wT-4I-o22"/>
-                                <include reference="ecH-BK-lO4"/>
-                                <include reference="8bh-jH-hGc"/>
-                                <include reference="l04-OR-Ef9"/>
                                 <include reference="OfE-RD-qGz"/>
                             </mask>
                         </variation>

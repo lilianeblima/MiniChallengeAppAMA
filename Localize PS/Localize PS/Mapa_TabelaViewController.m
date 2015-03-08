@@ -23,80 +23,6 @@
     return instance;
 }
 
-//
-//- (void)viewDidLoad {
-//    [super viewDidLoad];
-//    self.labelteste.text = self.itemSelecionado.latitude;
-//    _AtualizarPosicao=0;
-//    [super viewDidLoad];
-//    //CLLocationManager *locationManager;
-//    
-//    //Alocar memória para o locationManager
-//    self.locationManager = [[CLLocationManager alloc]init];
-//    
-//    //Mostrar ao locationManager o quão exata deve ser a localização encontrada
-//    [self.locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
-//    
-//    //Determinar que a propriedade delegate do locationManager seja a instância da ViewController
-//    [self.locationManager setDelegate:self];
-//    
-//    if([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)])
-//    {
-//        [self.locationManager requestAlwaysAuthorization];
-//    }
-//    
-//    
-//    //Dizer ao locationManager para começar a procurar pela localização imediatamente
-//    [self.locationManager startUpdatingLocation];
-//    // Do any additional setup after loading the view, typically from a nib.
-//    
-//   
-//}
-//
-//
-//
-//
-//-(void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-//{
-//    MKPointAnnotation *pm = [[MKPointAnnotation alloc]init];
-//    
-//    NSLog(@"%@", [locations lastObject]);
-//    //Encontrar as coordenadas de localização atual
-//    CLLocationCoordinate2D loc = [[locations lastObject] coordinate];
-//    
-//    //Determinar região com as coordenadas de localização atual e os limites N/S e L/O no zoom em metros
-//    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(loc, 250, 250);
-//    
-//    //    //Mudar a região atual para visualização de forma animada
-//    if(_AtualizarPosicao==0)
-//    {
-//        // [_Mapa removeAnnotations:[_Mapa annotations]];
-//        [_MapView setRegion:region animated:YES ];
-//        
-//        
-//        [pm setCoordinate:CLLocationCoordinate2DMake(loc.latitude, loc.longitude)];
-//        pm.title = [NSString stringWithFormat:@"Posicao Atual"];
-//        [_MapView addAnnotation:pm];
-//        _AtualizarPosicao=1;
-//    }
-//}
-//
-//- (void)didReceiveMemoryWarning {
-//    [super didReceiveMemoryWarning];
-//    // Dispose of any resources that can be recreated.
-//}
-//
-///*
-//#pragma mark - Navigation
-//
-//// In a storyboard-based application, you will often want to do a little preparation before navigation
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    // Get the new view controller using [segue destinationViewController].
-//    // Pass the selected object to the new view controller.
-//}
-//*/
-
-//----------------------------------------------------
 -(void)viewDidLoad{
     
 
@@ -129,13 +55,6 @@
     loc = [[_locationManager location]coordinate];
 
     
-    
-    
-    //    PointMarker *ps = [[PointMarker alloc] init];
-    //    [_mapView addAnnotation:ps];
-    //    [_mapView selectAnnotation:ps animated: YES];
-    //
-    
     [super viewDidLoad];
     
     MKPlacemark *source = [[MKPlacemark alloc]initWithCoordinate:CLLocationCoordinate2DMake(loc.latitude, loc.longitude) addressDictionary:[NSDictionary dictionaryWithObjectsAndKeys:@"",@"", nil] ];
@@ -148,14 +67,13 @@
     
     [self traceRoute:srcMapItem to:distMapItem];
     [_locationManager startUpdatingLocation];
+    [self NearestPS];
     
 }
 
 
 - (void)viewDidDisappear:(BOOL)animated{
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
-    
-    NSLog(@"disappear");
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -167,8 +85,7 @@
 
 
 -(void)NearestPS {
-    //Take Nearest PS
-
+    
     CLLocationCoordinate2D crd = CLLocationCoordinate2DMake([self.itemSelecionado.latitude doubleValue], [self.itemSelecionado.longitude doubleValue]);
     PointMarker *pin = [[PointMarker alloc] initWithCoordinate:crd title: self.itemSelecionado.nome Subtitle: self.itemSelecionado.endereco Distance:self.itemSelecionado.distancia];
     [_MapView addAnnotation:pin];
@@ -274,27 +191,13 @@
 
 
 
-/*
- *  Botão para calcular a rota até o
- * pronto socorro mais próximo
- *
- *
- */
-
-
-
 #pragma mark dd
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
     
-    if ([annotation isKindOfClass:[MKUserLocation class]])
-    {
-        
-        //Mudar Nome do annotation de Localização do Usuário
-        ((MKUserLocation *)annotation).title = @"Sua localização atual";
-        
-        return nil;  //return nil to use default blue dot view
+    if ([annotation isKindOfClass:[MKUserLocation class]]) {
+        return nil;
     }
     if ([annotation isKindOfClass:[PointMarker class]]) // use whatever annotation class you used when creating the annotation
     {
@@ -318,38 +221,6 @@
     return nil;
 }
 
-//- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
-//{
-//    
-//   // self.nomeLabel.text = [view.annotation title];
-//  //  self.endereco.text = [[view annotation]subtitle];
-//    if ([view.annotation isKindOfClass:[MKUserLocation class]])
-//    {
-//       // [_rotaBotao setHidden:YES];
-//       // [_rota setHidden:YES];
-//        
-//       // self.telefoneLabel.text = nil;
-//     //   self.distanciaLabel.text = nil;
-//    }
-//    else{
-//        
-//        self.telefoneLabel.text = [amaMaisProxima telefone];
-//        self.distanciaLabel.text = [NSString stringWithFormat:@"%.2f KM", [amaMaisProxima distanciaMapa]];
-//    }
-//    
-//    self.blurViewOutlet.hidden = NO;
-//    //view.pinColor = MKPinAnnotationColorGreen;
-//    
-//    MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:[view.annotation coordinate] addressDictionary:nil];
-//    
-//    
-//}
-
--(void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view {
-    
-    
-    
-}
 
 
 @end

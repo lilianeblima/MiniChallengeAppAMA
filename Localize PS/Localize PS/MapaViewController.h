@@ -17,9 +17,7 @@
 
 @interface MapaViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
 {
-    bool placesLocated;
     bool searching;
-    CLPlacemark *thePlacemark;
     ListaAMA *amas;
     AMA *amaMaisProxima;
     CLLocationCoordinate2D loc;

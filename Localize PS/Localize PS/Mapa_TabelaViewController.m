@@ -50,6 +50,7 @@
     [super viewDidLoad];
     
     
+    
     //Traca a rota logo quando a tela é aberta
     
     MKPlacemark *source = [[MKPlacemark alloc]initWithCoordinate:CLLocationCoordinate2DMake(loc.latitude, loc.longitude) addressDictionary:[NSDictionary dictionaryWithObjectsAndKeys:@"",@"", nil] ];
@@ -71,7 +72,7 @@
     
     NSLog(@"didFailWithError: %@", error);
     UIAlertView *errorAlert = [[UIAlertView alloc]
-                               initWithTitle:@"Erro" message:@"Falha em localizar sua localização" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                               initWithTitle:@"Erro" message:@"Falha de coneão" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [errorAlert show];
     
 }
@@ -128,6 +129,10 @@
         NSInteger t = round(rota.expectedTravelTime/60);
         NSString *tempo = [NSString stringWithFormat:@"Tempo: %ld min",(long)t];
         NSLog(@"tempo %@", tempo);
+        if (t == 0) {
+            [_LTempo setText:@" Não foi possível gerar a rota"];
+        }
+        else
         [_LTempo setText:tempo];
         [_labelteste setText:self.itemSelecionado.endereco];
         
@@ -160,7 +165,7 @@
 }
 
 
-// Botão para atualizar achar Posição atual no mapa
+// Botão para atualizar achar Posição atual no mapa e para o hospital
 
 - (IBAction)BAtualizar:(id)sender {
     [_locationManager startUpdatingLocation];
@@ -180,11 +185,6 @@
 }
 
 
-//Vai para a posicao em que o hospital se encontra
--(IBAction)BLocHosp:(id)sender {
-
-    [self NearestPS];
-}
 
 
 

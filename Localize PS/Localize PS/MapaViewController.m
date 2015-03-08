@@ -116,6 +116,10 @@
         NSInteger t = round(rota.expectedTravelTime/60);
         NSString *tempo = [NSString stringWithFormat:@"Tempo: %ld min",(long)t];
         NSLog(@"tempo %@", tempo);
+        if (t == 0) {
+            [_distanciaLabel setText:@"Falha de conexão"];
+        }
+        else
         [_distanciaLabel setText:tempo];
         }];
     

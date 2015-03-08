@@ -32,7 +32,7 @@
 + (instancetype)sharedInstance;
 @property (weak, nonatomic) IBOutlet UILabel *LTempo;
 @property (weak, nonatomic) IBOutlet UIButton *batualiza;
-@property (weak, nonatomic) IBOutlet UIButton *BHospital;
+
 - (IBAction)BLocHosp:(id)sender;
 
 @end

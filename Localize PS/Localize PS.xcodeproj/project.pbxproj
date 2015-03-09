@@ -27,6 +27,7 @@
 		21A977241AA72EFB00ED4823 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A977231AA72EFB00ED4823 /* CoreGraphics.framework */; };
 		21ABF5C91AA8A09500BD36C9 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ABF5C81AA8A09500BD36C9 /* Place.m */; };
 		21ABF5CC1AA8A0A900BD36C9 /* PointMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ABF5CB1AA8A0A900BD36C9 /* PointMarker.m */; };
+		21E16AF21AAD035A00E22B63 /* AnimatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E16AF11AAD035A00E22B63 /* AnimatedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		21ABF5C81AA8A09500BD36C9 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Place.m; path = "Localize PS/Place.m"; sourceTree = "<group>"; };
 		21ABF5CA1AA8A0A900BD36C9 /* PointMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointMarker.h; sourceTree = "<group>"; };
 		21ABF5CB1AA8A0A900BD36C9 /* PointMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointMarker.m; sourceTree = "<group>"; };
+		21E16AF01AAD035A00E22B63 /* AnimatedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedViewController.h; sourceTree = "<group>"; };
+		21E16AF11AAD035A00E22B63 /* AnimatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +190,8 @@
 				11F0EFDD1AAA3DE5006E5752 /* Mapa_TabelaViewController.m */,
 				11526E261AA728BC00BFE981 /* ViewController.m */,
 				11526E251AA728BC00BFE981 /* ViewController.h */,
+				21E16AF01AAD035A00E22B63 /* AnimatedViewController.h */,
+				21E16AF11AAD035A00E22B63 /* AnimatedViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 				21ABF5CC1AA8A0A900BD36C9 /* PointMarker.m in Sources */,
 				11668F4B1AA78B5E0013918C /* PSTableViewCell.m in Sources */,
 				11526E241AA728BC00BFE981 /* AppDelegate.m in Sources */,
+				21E16AF21AAD035A00E22B63 /* AnimatedViewController.m in Sources */,
 				11526E4D1AA74BA100BFE981 /* ListaAMA.m in Sources */,
 				11F0EFDE1AAA3DE5006E5752 /* Mapa_TabelaViewController.m in Sources */,
 				11526E4A1AA7486300BFE981 /* AMA.m in Sources */,

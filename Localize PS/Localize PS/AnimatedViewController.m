@@ -54,7 +54,7 @@
                                                                    _imagemAnimada.transform = CGAffineTransformMakeTranslation(0, self.view.frame.origin.y+200);
                                                                }
                                                                completion:^(BOOL finished){
-                                                                   _timer = [NSTimer scheduledTimerWithTimeInterval:0.8 target:self selector:@selector(nextView) userInfo:nil repeats:NO];
+                                                                   _timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(nextView) userInfo:nil repeats:NO];
                                                                }];
                                               
                                           }];

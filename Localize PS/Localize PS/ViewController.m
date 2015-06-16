@@ -44,13 +44,7 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
-
 #pragma mark Category button actions
-
 
 - (IBAction)mostraMapa:(id)sender {
 

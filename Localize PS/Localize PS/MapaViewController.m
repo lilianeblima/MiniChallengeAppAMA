@@ -22,22 +22,22 @@
     
     [self.mapView setDelegate:self];
     
-    //Pega instancia
+    // Pega instancia
     _locationManager = [[CLLocationManager alloc] init];
     
     
-    //Define precisão do GPS
+    // Define precisão do GPS
     [_locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
     
     
-    //Define que o delegate sera esta clase
+    // Define que o delegate sera esta clase
     [_locationManager setDelegate: self];
     
     if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
         [self.locationManager requestWhenInUseAuthorization];
     }
     
-    //Começa monitorar localização
+    // Começa monitorar localização
     [_locationManager startUpdatingLocation];
     
     // esconder botão para atualizar
@@ -45,7 +45,7 @@
     [_cancelarRota setHidden:YES];
     
     
-    //chama a funcao calculoDistancia mandando a localização atual
+    // chama a funcao calculoDistancia mandando a localização atual
     loc = [[_locationManager location]coordinate];
     [self calculoDistancia:loc];
     [amas exibirInfo];

@@ -15,7 +15,7 @@
 
 @interface Mapa_TabelaViewController : UIViewController<CLLocationManagerDelegate, MKMapViewDelegate>
 {
-     MKRoute *rota;
+    MKRoute *rota;
     bool searching;
     CLLocationCoordinate2D loc;
 }

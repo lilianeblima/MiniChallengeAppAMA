@@ -24,10 +24,4 @@
 
 @property CLLocationManager *locationManager;
 
-
-
-
-
-
-
 @end

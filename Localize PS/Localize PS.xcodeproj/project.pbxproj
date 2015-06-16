@@ -128,7 +128,7 @@
 				21ABF5BB1AA77C7000BD36C9 /* Plist */,
 				21ABF5B81AA77BC100BD36C9 /* Model */,
 				21ABF5BA1AA77C5400BD36C9 /* Fonts */,
-				21ABF5B91AA77BFE00BD36C9 /* ViewControllers */,
+				21ABF5B91AA77BFE00BD36C9 /* ViewController */,
 				11526E221AA728BC00BFE981 /* AppDelegate.h */,
 				11526E231AA728BC00BFE981 /* AppDelegate.m */,
 				11526E281AA728BC00BFE981 /* Main.storyboard */,
@@ -181,7 +181,7 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		21ABF5B91AA77BFE00BD36C9 /* ViewControllers */ = {
+		21ABF5B91AA77BFE00BD36C9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				21A9771A1AA72C3C00ED4823 /* MapaViewController.m */,
@@ -193,7 +193,7 @@
 				21E16AF01AAD035A00E22B63 /* AnimatedViewController.h */,
 				21E16AF11AAD035A00E22B63 /* AnimatedViewController.m */,
 			);
-			name = ViewControllers;
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		21ABF5BA1AA77C5400BD36C9 /* Fonts */ = {

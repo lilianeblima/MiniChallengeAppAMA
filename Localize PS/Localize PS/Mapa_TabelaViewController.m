@@ -37,9 +37,9 @@
     [_locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
     [_locationManager setDelegate: self];
     
-    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
-        [self.locationManager requestWhenInUseAuthorization];
-    }
+//    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+//        [self.locationManager requestWhenInUseAuthorization];
+//    }
     
     //Começa monitorar localização
     [_locationManager startUpdatingLocation];
@@ -101,7 +101,7 @@
     
 }
 
-//Funcao complementar para traçar a rota
+// Funcao complementar para traçar a rota
 -(void)traceRoute:(MKMapItem *) source to: (MKMapItem *) destination {
     [_MapView removeOverlay:rota.polyline];
     

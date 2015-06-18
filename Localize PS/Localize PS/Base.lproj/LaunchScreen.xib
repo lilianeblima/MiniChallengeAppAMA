@@ -11,12 +11,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icone" translatesAutoresizingMaskIntoConstraints="NO" id="M8n-Si-NQB">
-                    <rect key="frame" x="173" y="141" width="135" height="135"/>
+                    <rect key="frame" x="173" y="40" width="135" height="135"/>
                     <constraints>
+                        <constraint firstAttribute="height" constant="135" id="0Xg-xz-XJ4"/>
                         <constraint firstAttribute="width" constant="135" id="fUB-vv-AbO"/>
+                        <constraint firstAttribute="width" constant="135" id="g4T-1C-JY4"/>
                         <constraint firstAttribute="height" constant="135" id="lK4-2d-whI"/>
-                        <constraint firstAttribute="height" constant="135" id="mKd-xU-8Ga"/>
-                        <constraint firstAttribute="width" constant="135" id="r9w-rG-fM5"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
@@ -33,11 +33,11 @@
                     </variation>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titulo" translatesAutoresizingMaskIntoConstraints="NO" id="LUl-u4-Uyz">
-                    <rect key="frame" x="120" y="284" width="241" height="54"/>
+                    <rect key="frame" x="120" y="183" width="241" height="54"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="241" id="3bE-BZ-uUy"/>
-                        <constraint firstAttribute="width" constant="241" id="RAk-65-531"/>
-                        <constraint firstAttribute="height" constant="54" id="mf3-yp-ZvD"/>
+                        <constraint firstAttribute="height" constant="54" id="4om-Ac-Zs5"/>
+                        <constraint firstAttribute="width" constant="241" id="LdL-xn-LN6"/>
                         <constraint firstAttribute="height" constant="54" id="yNi-YU-6vL"/>
                     </constraints>
                     <variation key="default">
@@ -57,11 +57,10 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="M8n-Si-NQB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="141" id="4We-Cu-sAw"/>
-                <constraint firstAttribute="centerX" secondItem="LUl-u4-Uyz" secondAttribute="centerX" id="7hd-kX-TeA"/>
-                <constraint firstAttribute="centerX" secondItem="M8n-Si-NQB" secondAttribute="centerX" id="dpb-yc-1fr"/>
-                <constraint firstItem="LUl-u4-Uyz" firstAttribute="top" secondItem="M8n-Si-NQB" secondAttribute="bottom" constant="8" id="tcQ-wN-x0w"/>
-                <constraint firstItem="LUl-u4-Uyz" firstAttribute="top" secondItem="M8n-Si-NQB" secondAttribute="bottom" constant="8" id="ugR-Nw-dkl"/>
+                <constraint firstItem="LUl-u4-Uyz" firstAttribute="top" secondItem="M8n-Si-NQB" secondAttribute="bottom" constant="8" id="5Y7-3d-YPI"/>
+                <constraint firstAttribute="centerX" secondItem="LUl-u4-Uyz" secondAttribute="centerX" id="Qt1-OE-Uvt"/>
+                <constraint firstAttribute="centerX" secondItem="M8n-Si-NQB" secondAttribute="centerX" id="anT-jg-R2c"/>
+                <constraint firstItem="M8n-Si-NQB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="d6r-op-wHT"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

@@ -31,7 +31,7 @@
 - (IBAction)atualizarPS:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *atualizarPS;
 
-@property (weak, nonatomic) IBOutlet UIVisualEffectView *blurViewOutlet;
+@property (weak, nonatomic) IBOutlet UIView *blurViewOutlet;
 
 
 @property MKPointAnnotation *pointMarker;

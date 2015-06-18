@@ -16,6 +16,7 @@
 
 @synthesize searching;
 @synthesize loc;
+@synthesize batualiza;
 
 //singleton
 + (instancetype)sharedInstance {
@@ -29,6 +30,11 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
+    
+   // [batualiza setTitle: @"Atualizar" forState:UIControlStateNormal];
+    batualiza.layer.borderWidth = 1.5;
+    batualiza.layer.borderColor = [UIColor whiteColor].CGColor;
+    batualiza.layer.cornerRadius = 6;
     
     // Inicializa o _locationManager, para pegar as posiçoes
 

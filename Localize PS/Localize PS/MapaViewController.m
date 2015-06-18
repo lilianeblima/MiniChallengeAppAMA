@@ -311,11 +311,12 @@ self.blurViewOutlet.hidden = YES;
     
 }
 
--(void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view {
+- (IBAction)buttonVoltar:(UIBarButtonItem *)sender {
     
-    
+    [self.navigationController dismissViewControllerAnimated:true completion:nil];
     
 }
+
 
 
 @end

@@ -24,23 +24,26 @@
     [super viewDidLoad];
     
 
-    //Inicializando as variaveis
+    // Inicializando as variaveis
     ama = [[AMA alloc]init];
     listaAma = [[ListaAMA alloc]init];
 
-    //Pega instancia
+    // Pega instancia
     _locationManager = [[CLLocationManager alloc] init];
-    //Define precisão do GPS
+    
+    // Define precisão do GPS
     [_locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
-    //Define que o delegate sera esta clase
+    
+    // Define que o delegate sera esta clase
     [_locationManager setDelegate: self];
     if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
         [self.locationManager requestWhenInUseAuthorization];
     }
-    //Começa monitorar localização
+    
+    // Começa monitorar localização
     [_locationManager startUpdatingLocation];
     
-    //Salva as coordenadas do cliente na variavel loc
+    // Salva as coordenadas do cliente na variavel loc
     loc = [_locationManager location].coordinate;
     
 }
@@ -49,20 +52,22 @@
 
 #pragma mark - Table view data source
 
-//Configuracoes da Table View
+// Configuracoes da Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
     return 1;
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     return [listaAma.AllAMA count];
+    
 }
 
 
-//Preenchimento da tabela
+// Preenchimento da tabela
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -83,6 +88,7 @@
     cell.HRegiao.text = currentAma.regiao;
     cell.HHorario.text = currentAma.is24hrs;
     return cell;
+    
 }
 
 
@@ -110,13 +116,14 @@
     
 }
 
-//Configurações para passar os dados para a proxima view
+// Configurações para passar os dados para a proxima view
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     itemSelecionado = [listaAma.AllAMA objectAtIndex:[indexPath row]];
     
     [self performSegueWithIdentifier:@"showMapSegue" sender:tableView];
+    
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -131,14 +138,16 @@
 
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     // Return NO if you do not want the item to be re-orderable.
     return YES;
+    
 }
 
-//Calculo para determinar a distancia entre o usuario e um Hospital
-
+// Calculo para determinar a distancia entre o usuario e um Hospital
 -(CLLocationDistance) DistanceBetweenCoordinate:(CLLocationCoordinate2D)origenCoordinete andCoordinate:(double )LatDestion andLong:(double)LongDestion
 {
+    
     CLLocation *originlocation = [[CLLocation alloc]initWithLatitude:origenCoordinete.latitude longitude:origenCoordinete.longitude];
     
     CLLocation *destination = [[CLLocation alloc]initWithLatitude:LatDestion longitude:LongDestion];
@@ -149,17 +158,17 @@
     
 }
 
-//Ordenando o vetor
+// Ordenando o vetor
 -(void)sortAllAma{
+    
     for (int i = 0; i < [listaAma.AllAMA count]; i++) {
         AMA *currentAma = listaAma.AllAMA[i];
-        
-        
         
         CLLocationDistance auxDistance = [self DistanceBetweenCoordinate:loc andCoordinate: [currentAma.latitude doubleValue] andLong:[currentAma.longitude doubleValue]];
         
         [currentAma setDistancia:auxDistance];
         [listaAma.AllAMA replaceObjectAtIndex:i withObject:currentAma];
+        
     }
     
     NSSortDescriptor *modelDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"distancia" ascending:YES];
@@ -167,15 +176,13 @@
     NSArray *sortedArray = [listaAma.AllAMA sortedArrayUsingDescriptors:sortDescriptors];
     
     [listaAma setAllAMA:[sortedArray mutableCopy]];
+    
 }
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+
+- (IBAction)buttonVoltar:(UIBarButtonItem *)sender {
+    
+    [self.navigationController dismissViewControllerAnimated:true completion:nil];
+    
+}
 
 @end

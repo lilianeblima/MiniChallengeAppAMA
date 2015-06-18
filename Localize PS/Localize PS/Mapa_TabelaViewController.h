@@ -17,7 +17,7 @@
 {
     MKRoute *rota;
     bool searching;
-    CLLocationCoordinate2D loc;
+    CLLocationCoordinate2D * loc;
 }
 
 @property (weak, nonatomic) IBOutlet MKMapView *MapView;
@@ -33,6 +33,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *LTempo;
 @property (weak, nonatomic) IBOutlet UIButton *batualiza;
 
-- (IBAction)BLocHosp:(id)sender;
 
 @end

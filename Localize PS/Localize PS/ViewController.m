@@ -44,17 +44,4 @@
 }
 
 
-#pragma mark Category button actions
-
-- (IBAction)mostraMapa:(id)sender {
-
-}
-
-
-- (IBAction)mostraListaPS:(id)sender {
-}
-
-
-
-
 @end

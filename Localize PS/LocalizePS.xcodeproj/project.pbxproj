@@ -27,7 +27,6 @@
 		21A977241AA72EFB00ED4823 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A977231AA72EFB00ED4823 /* CoreGraphics.framework */; };
 		21ABF5C91AA8A09500BD36C9 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ABF5C81AA8A09500BD36C9 /* Place.m */; };
 		21ABF5CC1AA8A0A900BD36C9 /* PointMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ABF5CB1AA8A0A900BD36C9 /* PointMarker.m */; };
-		21E16AF21AAD035A00E22B63 /* AnimatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E16AF11AAD035A00E22B63 /* AnimatedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11526E1B1AA728BC00BFE981 /* Localize PS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Localize PS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11526E1B1AA728BC00BFE981 /* LocalizePS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizePS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11526E1F1AA728BC00BFE981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11526E201AA728BC00BFE981 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11526E221AA728BC00BFE981 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,7 +50,7 @@
 		11526E291AA728BC00BFE981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11526E2B1AA728BC00BFE981 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		11526E2E1AA728BC00BFE981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		11526E341AA728BC00BFE981 /* Localize PSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Localize PSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11526E341AA728BC00BFE981 /* LocalizePSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizePSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11526E391AA728BC00BFE981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11526E3A1AA728BC00BFE981 /* Localize_PSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Localize_PSTests.m; sourceTree = "<group>"; };
 		11526E461AA7459100BFE981 /* PS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PS.plist; path = ../PS.plist; sourceTree = "<group>"; };
@@ -75,8 +74,6 @@
 		21ABF5C81AA8A09500BD36C9 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Place.m; path = "Localize PS/Place.m"; sourceTree = "<group>"; };
 		21ABF5CA1AA8A0A900BD36C9 /* PointMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointMarker.h; sourceTree = "<group>"; };
 		21ABF5CB1AA8A0A900BD36C9 /* PointMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointMarker.m; sourceTree = "<group>"; };
-		21E16AF01AAD035A00E22B63 /* AnimatedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedViewController.h; sourceTree = "<group>"; };
-		21E16AF11AAD035A00E22B63 /* AnimatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +112,8 @@
 		11526E1C1AA728BC00BFE981 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11526E1B1AA728BC00BFE981 /* Localize PS.app */,
-				11526E341AA728BC00BFE981 /* Localize PSTests.xctest */,
+				11526E1B1AA728BC00BFE981 /* LocalizePS.app */,
+				11526E341AA728BC00BFE981 /* LocalizePSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,8 +187,6 @@
 				11F0EFDD1AAA3DE5006E5752 /* Mapa_TabelaViewController.m */,
 				11526E261AA728BC00BFE981 /* ViewController.m */,
 				11526E251AA728BC00BFE981 /* ViewController.h */,
-				21E16AF01AAD035A00E22B63 /* AnimatedViewController.h */,
-				21E16AF11AAD035A00E22B63 /* AnimatedViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -227,9 +222,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11526E1A1AA728BC00BFE981 /* Localize PS */ = {
+		11526E1A1AA728BC00BFE981 /* LocalizePS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11526E3E1AA728BC00BFE981 /* Build configuration list for PBXNativeTarget "Localize PS" */;
+			buildConfigurationList = 11526E3E1AA728BC00BFE981 /* Build configuration list for PBXNativeTarget "LocalizePS" */;
 			buildPhases = (
 				11526E171AA728BC00BFE981 /* Sources */,
 				11526E181AA728BC00BFE981 /* Frameworks */,
@@ -239,14 +234,14 @@
 			);
 			dependencies = (
 			);
-			name = "Localize PS";
+			name = LocalizePS;
 			productName = "Localize PS";
-			productReference = 11526E1B1AA728BC00BFE981 /* Localize PS.app */;
+			productReference = 11526E1B1AA728BC00BFE981 /* LocalizePS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		11526E331AA728BC00BFE981 /* Localize PSTests */ = {
+		11526E331AA728BC00BFE981 /* LocalizePSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11526E411AA728BC00BFE981 /* Build configuration list for PBXNativeTarget "Localize PSTests" */;
+			buildConfigurationList = 11526E411AA728BC00BFE981 /* Build configuration list for PBXNativeTarget "LocalizePSTests" */;
 			buildPhases = (
 				11526E301AA728BC00BFE981 /* Sources */,
 				11526E311AA728BC00BFE981 /* Frameworks */,
@@ -257,9 +252,9 @@
 			dependencies = (
 				11526E361AA728BC00BFE981 /* PBXTargetDependency */,
 			);
-			name = "Localize PSTests";
+			name = LocalizePSTests;
 			productName = "Localize PSTests";
-			productReference = 11526E341AA728BC00BFE981 /* Localize PSTests.xctest */;
+			productReference = 11526E341AA728BC00BFE981 /* LocalizePSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -281,7 +276,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 11526E161AA728BC00BFE981 /* Build configuration list for PBXProject "Localize PS" */;
+			buildConfigurationList = 11526E161AA728BC00BFE981 /* Build configuration list for PBXProject "LocalizePS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -294,8 +289,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11526E1A1AA728BC00BFE981 /* Localize PS */,
-				11526E331AA728BC00BFE981 /* Localize PSTests */,
+				11526E1A1AA728BC00BFE981 /* LocalizePS */,
+				11526E331AA728BC00BFE981 /* LocalizePSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -332,7 +327,6 @@
 				21ABF5CC1AA8A0A900BD36C9 /* PointMarker.m in Sources */,
 				11668F4B1AA78B5E0013918C /* PSTableViewCell.m in Sources */,
 				11526E241AA728BC00BFE981 /* AppDelegate.m in Sources */,
-				21E16AF21AAD035A00E22B63 /* AnimatedViewController.m in Sources */,
 				11526E4D1AA74BA100BFE981 /* ListaAMA.m in Sources */,
 				11F0EFDE1AAA3DE5006E5752 /* Mapa_TabelaViewController.m in Sources */,
 				11526E4A1AA7486300BFE981 /* AMA.m in Sources */,
@@ -355,7 +349,7 @@
 /* Begin PBXTargetDependency section */
 		11526E361AA728BC00BFE981 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 11526E1A1AA728BC00BFE981 /* Localize PS */;
+			target = 11526E1A1AA728BC00BFE981 /* LocalizePS */;
 			targetProxy = 11526E351AA728BC00BFE981 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -414,7 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -450,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -464,7 +458,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Localize PS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LocalizePS;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -474,7 +469,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Localize PS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LocalizePS;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -492,7 +488,7 @@
 				);
 				INFOPLIST_FILE = "Localize PSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LocalizePSTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Localize PS.app/Localize PS";
 			};
 			name = Debug;
@@ -507,7 +503,7 @@
 				);
 				INFOPLIST_FILE = "Localize PSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LocalizePSTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Localize PS.app/Localize PS";
 			};
 			name = Release;
@@ -515,7 +511,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11526E161AA728BC00BFE981 /* Build configuration list for PBXProject "Localize PS" */ = {
+		11526E161AA728BC00BFE981 /* Build configuration list for PBXProject "LocalizePS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11526E3C1AA728BC00BFE981 /* Debug */,
@@ -524,7 +520,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11526E3E1AA728BC00BFE981 /* Build configuration list for PBXNativeTarget "Localize PS" */ = {
+		11526E3E1AA728BC00BFE981 /* Build configuration list for PBXNativeTarget "LocalizePS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11526E3F1AA728BC00BFE981 /* Debug */,
@@ -533,7 +529,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11526E411AA728BC00BFE981 /* Build configuration list for PBXNativeTarget "Localize PSTests" */ = {
+		11526E411AA728BC00BFE981 /* Build configuration list for PBXNativeTarget "LocalizePSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11526E421AA728BC00BFE981 /* Debug */,

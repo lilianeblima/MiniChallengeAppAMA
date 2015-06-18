@@ -24,8 +24,5 @@ NSArray *query;
 @property CLLocationManager *locationManager;
 
 
-- (IBAction)mostraMapa:(id)sender;
-- (IBAction)mostraListaPS:(id)sender;
-
 @end
 

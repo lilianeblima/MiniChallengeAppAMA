@@ -14,6 +14,9 @@
 
 @implementation Mapa_TabelaViewController
 
+@synthesize searching;
+@synthesize loc;
+
 //singleton
 + (instancetype)sharedInstance {
     static dispatch_once_t onceToken = 0;
@@ -25,8 +28,9 @@
 }
 
 -(void)viewDidLoad{
+    [super viewDidLoad];
     
-    //Inicializa o _locationManager, para pegar as posiçoes
+    // Inicializa o _locationManager, para pegar as posiçoes
 
     searching = NO;
   
@@ -37,23 +41,16 @@
     [_locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
     [_locationManager setDelegate: self];
     
-//    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
-//        [self.locationManager requestWhenInUseAuthorization];
-//    }
     
     //Começa monitorar localização
     [_locationManager startUpdatingLocation];
     
     //Salva a posicao do usuario
-    loc = [[_locationManager location]coordinate];
+    *loc = [[_locationManager location]coordinate];
 
-    [super viewDidLoad];
+    // Traca a rota logo quando a tela é aberta
     
-    
-    
-    //Traca a rota logo quando a tela é aberta
-    
-    MKPlacemark *source = [[MKPlacemark alloc]initWithCoordinate:CLLocationCoordinate2DMake(loc.latitude, loc.longitude) addressDictionary:[NSDictionary dictionaryWithObjectsAndKeys:@"",@"", nil] ];
+    MKPlacemark *source = [[MKPlacemark alloc]initWithCoordinate:CLLocationCoordinate2DMake(loc->latitude, loc->longitude) addressDictionary:[NSDictionary dictionaryWithObjectsAndKeys:@"",@"", nil] ];
     MKMapItem *srcMapItem = [[MKMapItem alloc]initWithPlacemark:source];
     [srcMapItem setName:@"Location"];
     
@@ -68,7 +65,6 @@
 }
 
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-    //NSLog(@"%@",error.localizedDescription);
     
     NSLog(@"didFailWithError: %@", error);
     UIAlertView *errorAlert = [[UIAlertView alloc]
@@ -77,18 +73,7 @@
     
 }
 
-- (void)viewDidDisappear:(BOOL)animated{
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-//Adiciona anotaçoes no hospital
+// Adiciona anotaçoes no hospital
 -(void)NearestPS {
     
     CLLocationCoordinate2D crd = CLLocationCoordinate2DMake([self.itemSelecionado.latitude doubleValue], [self.itemSelecionado.longitude doubleValue]);
@@ -130,7 +115,7 @@
         NSString *tempo = [NSString stringWithFormat:@"Tempo: %ld min",(long)t];
         NSLog(@"tempo %@", tempo);
         if (t == 0) {
-            [_LTempo setText:@" Não foi possível gerar a rota"];
+            [_LTempo setText:@"Não foi possível gerar a rota"];
         }
         else
         [_LTempo setText:tempo];
@@ -220,6 +205,11 @@
     return nil;
 }
 
+- (IBAction)buttonVoltar:(id)sender {
+    
+    [self.navigationController popViewControllerAnimated:true];
+    
+}
 
 
 @end

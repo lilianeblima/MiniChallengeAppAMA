@@ -33,10 +33,6 @@
     // Define que o delegate sera esta clase
     [_locationManager setDelegate: self];
     
-    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
-        [self.locationManager requestWhenInUseAuthorization];
-    }
-    
     // Começa monitorar localização
     [_locationManager startUpdatingLocation];
     
@@ -90,7 +86,7 @@
 }
 
 -(void)traceRoute:(MKMapItem *) source to: (MKMapItem *) destination {
-    [_mapView removeOverlay:rota.polyline];
+    [_mapView removeOverlay:rotaV.polyline];
     
     MKDirectionsRequest *request = [[MKDirectionsRequest alloc] init];
     
@@ -104,16 +100,16 @@
         
         NSArray *arrRoutes = [response routes];
         [arrRoutes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-            rota = obj;
-            MKPolyline *line = [rota polyline];
+            rotaV = obj;
+            MKPolyline *line = [rotaV polyline];
             [_mapView addOverlay:line level:MKOverlayLevelAboveRoads];
             
-            NSArray *steps = [rota steps];
+            NSArray *steps = [rotaV steps];
             [steps enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
                 
             }];
         }];
-        NSInteger t = round(rota.expectedTravelTime/60);
+        NSInteger t = round(rotaV.expectedTravelTime/60);
         NSString *tempo = [NSString stringWithFormat:@"Tempo: %ld min",(long)t];
         NSLog(@"tempo %@", tempo);
         if (t == 0) {
@@ -198,8 +194,8 @@
     [self NearestPS];
 }
 
-- (void) calculoDistancia : (CLLocationCoordinate2D)loc {
-    CLLocation *inicial = [[CLLocation alloc] initWithLatitude:loc.latitude longitude: loc.longitude];
+- (void) calculoDistancia : (CLLocationCoordinate2D)locB {
+    CLLocation *inicial = [[CLLocation alloc] initWithLatitude:locB.latitude longitude: locB.longitude];
     CLLocationDistance distancia;
     CLLocation *coordenadas;
     
@@ -245,7 +241,7 @@
 }
 
 - (IBAction)cancelarRota:(id)sender {
-[_mapView removeOverlay:rota.polyline];
+[_mapView removeOverlay:rotaV.polyline];
 self.blurViewOutlet.hidden = YES;
 }
 
@@ -306,7 +302,7 @@ self.blurViewOutlet.hidden = YES;
     self.blurViewOutlet.hidden = NO;
     //view.pinColor = MKPinAnnotationColorGreen;
     
-    MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:[view.annotation coordinate] addressDictionary:nil];
+    //MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:[view.annotation coordinate] addressDictionary:nil];
     
     
 }

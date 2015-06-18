@@ -21,7 +21,7 @@
     ListaAMA *amas;
     AMA *amaMaisProxima;
     CLLocationCoordinate2D loc;
-    MKRoute *rota;
+    MKRoute *rotaV;
 
 }
 

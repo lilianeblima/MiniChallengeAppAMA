@@ -10,13 +10,13 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icone" translatesAutoresizingMaskIntoConstraints="NO" id="M8n-Si-NQB">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icone" translatesAutoresizingMaskIntoConstraints="NO" id="M8n-Si-NQB">
                     <rect key="frame" x="173" y="141" width="135" height="135"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="135" id="fUB-vv-AbO"/>
                         <constraint firstAttribute="height" constant="135" id="lK4-2d-whI"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="135" id="mKd-xU-8Ga"/>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="r9w-rG-fM5"/>
+                        <constraint firstAttribute="height" constant="135" id="mKd-xU-8Ga"/>
+                        <constraint firstAttribute="width" constant="135" id="r9w-rG-fM5"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
@@ -32,12 +32,12 @@
                         </mask>
                     </variation>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="titulo" translatesAutoresizingMaskIntoConstraints="NO" id="LUl-u4-Uyz">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titulo" translatesAutoresizingMaskIntoConstraints="NO" id="LUl-u4-Uyz">
                     <rect key="frame" x="120" y="284" width="241" height="54"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="241" id="3bE-BZ-uUy"/>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="241" id="RAk-65-531"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="mf3-yp-ZvD"/>
+                        <constraint firstAttribute="width" constant="241" id="RAk-65-531"/>
+                        <constraint firstAttribute="height" constant="54" id="mf3-yp-ZvD"/>
                         <constraint firstAttribute="height" constant="54" id="yNi-YU-6vL"/>
                     </constraints>
                     <variation key="default">

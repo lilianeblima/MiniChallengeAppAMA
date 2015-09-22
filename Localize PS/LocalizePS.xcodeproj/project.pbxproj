@@ -263,12 +263,12 @@
 		11526E131AA728BC00BFE981 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Liliane Bezerra Lima";
 				TargetAttributes = {
 					11526E1A1AA728BC00BFE981 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 29E7ZBNXCF;
+						DevelopmentTeam = 4RLR8FUC4X;
 					};
 					11526E331AA728BC00BFE981 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -394,6 +394,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -456,9 +457,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Localize PS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.comLiliane.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LocalizePS;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -467,9 +472,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Localize PS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.comLiliane.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LocalizePS;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -488,6 +497,7 @@
 				);
 				INFOPLIST_FILE = "Localize PSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.comLiliane.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LocalizePSTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Localize PS.app/Localize PS";
 			};
@@ -503,6 +513,7 @@
 				);
 				INFOPLIST_FILE = "Localize PSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.comLiliane.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LocalizePSTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Localize PS.app/Localize PS";
 			};
